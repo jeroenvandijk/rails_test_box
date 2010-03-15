@@ -19,20 +19,21 @@ After you have ran through the instruction below you'll be able to run the Rails
 
 Install VirtualBox
 
-  gem install vagrant
+    gem install vagrant
   
 Clone this repository
 
-  git clone 
-  git submodules init
-  cd rails_test_box
-  vagrant up
+    git://github.com/jeroenvandijk/rails_test_box.git
+    cd rails_test_box
+    git submodule update
+    vagrant up
+    vagrant reload
 
 Wait a while until you vagrant is ready
 
-  vagrant ssh
-  cd rails
-  rake
+    vagrant ssh
+    cd rails
+    rake
   
 Everything should pass. Now you can start patching Rails and run the tests again.
   
