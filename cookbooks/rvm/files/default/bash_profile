@@ -1,0 +1,1 @@
+if [[ -s /home/vagrant/.rvm/scripts/rvm ]] ; then source /home/vagrant/.rvm/scripts/rvm ; fi

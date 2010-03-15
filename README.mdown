@@ -1,0 +1,44 @@
+Currently this repository is not working fully, do not use it yet
+It assumes you have vagrant installed from the github repository,
+
+Issues:
+
+  - rake mysql:build_databases makes the vagrant script fail
+  - When you ssh into the box and run the test it will tell you that gems have not been installed while bundler has been run
+  
+
+
+
+
+Rails Test Box (Still an Idea in progress)
+==============
+
+This repositories contains everything you need to be a Rails Core contributor in no-time
+
+After you have ran through the instruction below you'll be able to run the Rails Test Suite (for the most important databases).
+
+Install VirtualBox
+
+  gem install vagrant
+  
+Clone this repository
+
+  git clone 
+  git submodules init
+  cd rails_test_box
+  vagrant up
+
+Wait a while until you vagrant is ready
+
+  vagrant ssh
+  cd rails
+  rake
+  
+Everything should pass. Now you can start patching Rails and run the tests again.
+  
+
+TODO
+----
+Add memcache support
+Find out why not all tests are succeeding
+Add commands to run test suite from the host dir
