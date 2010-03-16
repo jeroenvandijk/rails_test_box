@@ -1,5 +1,9 @@
 Vagrant::Config.run do |config|
   config.vm.box = "base"
+
+  config.vm.customize do |vm|
+      vm.name = "Rails Test Environment"
+    end
   
   config.vm.share_folder('rails', 'rails', 'rails')
   
