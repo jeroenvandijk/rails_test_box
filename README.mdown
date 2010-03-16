@@ -7,9 +7,6 @@ Issues:
   - When you ssh into the box and run the test it will tell you that gems have not been installed while bundler has been run
   
 
-
-
-
 Rails Test Box (Still an Idea in progress)
 ==============
 
@@ -23,11 +20,11 @@ Install VirtualBox
   
 Clone this repository
 
-    git://github.com/jeroenvandijk/rails_test_box.git
+    git clone git://github.com/jeroenvandijk/rails_test_box.git
     cd rails_test_box
     git submodule update
     vagrant up
-    vagrant reload
+
 
 Wait a while until you vagrant is ready
 
