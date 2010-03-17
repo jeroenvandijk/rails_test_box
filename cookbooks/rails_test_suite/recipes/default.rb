@@ -4,16 +4,23 @@ rvm     = "#{rvm_home}/bin/rvm"
 rvmsudo = "#{rvm_home}/bin/rvmsudo"
 rvm_gem = "#{rvm_home}/rubies/ruby-1.8.7-p249/bin/gem"
 
-execute "bundler" do 
-  command "#{rvmsudo} #{rvm_gem} install bundler"
+execute "Install bundler and rake gems" do 
+  command "#{rvmsudo} #{rvm_gem} install bundler rake"
   user "vagrant"
   group "vagrant"
 end
 
-execute "Install Rails core gem dependencies" do
-  command "#{rvm} 1.8.7 && #{rvmsudo} #{rvm_home}/rubies/ruby-1.8.7-p249/lib/ruby/gems/1.8/bin/bundle install"
-  cwd "#{home}/rails"
-  user "vagrant"
+bundle_command = "#{rvm} 1.8.7 && #{rvm_home}/rubies/ruby-1.8.7-p249/lib/ruby/gems/1.8/bin/bundle install vendor"
+
+bundle_dirs = [ "#{home}/rails" ] + 
+              %w(activesupport activemodel actionpack actionmailer activeresource activerecord railties).map { |dir| "#{home}/rails/#{dir}" }
+
+bundle_dirs.each do |dir|
+  execute "Run bundle install for #{dir}" do
+    command bundle_command
+    cwd dir
+    user "vagrant"
+  end
 end
 
 remote_file "/tmp/rails_mysql_user_grants.sql"
@@ -30,11 +37,11 @@ execute "Create postgres vagrant user" do
 end
 
 rvm_rake = "#{rvm_home}/gems/ruby-1.8.7-p249%global/bin/rake"
-rake = "#{rvm} 1.8.7 && #{rvmsudo} #{rvm_rake}"
+rake = "#{rvm} 1.8.7 && #{rvm_rake}"
 activerecord_path = "#{home}/rails/activerecord"
 
 %w(mysql postgresql).each do |database|
-  # First we are gonna drop the database to make sure creating succeeds
+  # First we are gonna drop the database to make sure creating on succeeds
   execute "Drop #{database} databases" do
     user "vagrant"
     cwd activerecord_path
