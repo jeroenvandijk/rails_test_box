@@ -56,7 +56,7 @@ Credits
 -------
 Jeroen van Dijk for initiating
 Josh Kalderimis for assistence
-Mitchell ... for bringing Vagrant on the table
+Mitchell Hashimoto and John Bender for bringing Vagrant on the table
 Opscode for developing Chef
 
 Contributors
