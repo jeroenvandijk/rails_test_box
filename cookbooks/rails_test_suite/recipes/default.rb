@@ -10,7 +10,7 @@ execute "Install bundler and rake gems" do
   group "vagrant"
 end
 
-bundle_command = "#{rvm} 1.8.7 && #{rvm_home}/rubies/ruby-1.8.7-p249/lib/ruby/gems/1.8/bin/bundle install vendor"
+bundle_command = "#{rvm} 1.8.7 && #{rvmsudo} #{rvm_home}/rubies/ruby-1.8.7-p249/lib/ruby/gems/1.8/bin/bundle install vendor"
 
 bundle_dirs = [ "#{home}/rails" ] + 
               %w(activesupport activemodel actionpack actionmailer activeresource activerecord railties).map { |dir| "#{home}/rails/#{dir}" }
