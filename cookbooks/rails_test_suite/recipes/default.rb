@@ -32,8 +32,8 @@ end
 
 execute "Create postgres vagrant user" do
   user "postgres"
-  command "/usr/bin/createuser vagrant -dRS"
-  ignore_failure true # FIXME Should be more like create if not exist, but don't know what to use 
+  command "/usr/bin/createuser vagrant -dRs"
+  not_if %[echo "select usename from pg_user;" | psql | grep #{db_user}]
 end
 
 rvm_rake = "#{rvm_home}/gems/ruby-1.8.7-p249%global/bin/rake"

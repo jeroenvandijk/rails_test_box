@@ -3,7 +3,7 @@ Vagrant::Config.run do |config|
 
   config.vm.customize do |vm|
       vm.name = "Rails Test Environment"
-      vm.memory = 512
+      vm.memory = 256
     end
   
   config.vm.share_folder('rails', 'rails', 'rails')
