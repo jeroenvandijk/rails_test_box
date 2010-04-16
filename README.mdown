@@ -6,16 +6,24 @@ This repositories contains everything you need to be a Rails Core contributor in
 After you have ran through the instruction below you'll be able to run the Rails Test Suite (for the most important databases).
 
 ### Setup
-
-Install necessary gems:
-
-    bundle install
   
 Clone this repository
 
     git clone git://github.com/jeroenvandijk/rails_test_box.git
     cd rails_test_box
     git submodule update --init
+
+
+Install necessary gems:
+
+    bundle install
+
+If you don't have a base box yet you might want to use the base box of the Vagrant guys (Thank you vagrant)
+
+    bundle exec vagrant box add base http://files.vagrantup.com/base.box
+
+Set up the box
+
     bundle exec vagrant up
 
 Wait a while until your box is ready and start running the tests:
