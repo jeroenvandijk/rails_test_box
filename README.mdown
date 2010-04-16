@@ -7,22 +7,20 @@ After you have ran through the instruction below you'll be able to run the Rails
 
 ### Setup
 
-Install VirtualBox, Install vagrant (version 0.2.0.pre from git, use sudo if necessary)
+Install necessary gems:
 
-    git clone git://github.com/mitchellh/vagrant.git
-    cd vagrant
-    rake install
+    bundle install
   
 Clone this repository
 
     git clone git://github.com/jeroenvandijk/rails_test_box.git
     cd rails_test_box
     git submodule update --init
-    vagrant up
+    bundle exec vagrant up
 
 Wait a while until your box is ready and start running the tests:
 
-    vagrant ssh
+    bundle exec vagrant ssh
     cd rails
     rake
   
@@ -32,25 +30,15 @@ Everything should pass. Now you can start patching Rails and run the tests again
 
 When you have wrecked your box or if you just want to update everything without worrying if something would conflict, you can do the following in the directory where you did the original checkout of this box:
 
-    vagrant down
+    bundle exec vagrant destroy
     git pull
     git submodule update
-    vagrant up
+    bundle exec vagrant up
     
   
 About
 -----
 This repo, when you follow the above commands, sets up everything you need to get the Rails Test Suite running. It does not require you to set up mysql, postgresql, etc., it will do that for you within the VirtualBox. The good thing is that it uses [RVM](http://rvm.beginrescueend.com) which makes it even possible to run the test suite against different versions of Ruby.
-  
-TODO
-----
-* Find out why PostGresql tests are failing
-* Add memcache support (currently these tests are skipped)
-* Make tests run faster (by increasing VirtualBox memory?)
-* Optimize installation of gems (see issues)
-* Code clean up, using Chef conventions
-* Add commands to run test suite from the host dir
-* Add comands to run the Rails test suite against multiple ruby versions (JRuby, Ruby, etc)
 
 Credits
 -------
