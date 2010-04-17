@@ -1,0 +1,221 @@
+vagrant@vagrantbase:~/rails$ rake
+(in /home/vagrant/rails/activesupport)
+./test/time_zone_test.rb:285: warning: ambiguous first argument; put parentheses or even spaces
+Loaded suite /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+.........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Finished in 9.393244 seconds.
+
+1865 tests, 8198 assertions, 0 failures, 0 errors
+(in /home/vagrant/rails/activemodel)
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/pathname.rb:263: warning: `*' interpreted as argument prefix
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-0.9.21/lib/bundler.rb:70: warning: instance variable @setup not initialized
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-0.9.21/lib/bundler/runtime.rb:133: warning: method redefined; discarding old path
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/algebra/relations/utilities/compound.rb:36: warning: method redefined; discarding old engine
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/algebra/relations/operations/lock.rb:6: warning: method redefined; discarding old initialize
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/engines/memory/relations/array.rb:9: warning: method redefined; discarding old initialize
+Loaded suite /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+..............................................................................................................................................................................................................................................................................................................
+Finished in 2.192508 seconds.
+
+302 tests, 976 assertions, 0 failures, 0 errors
+(in /home/vagrant/rails/actionpack)
+Loaded suite /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................EEE..............................................................................................................................................................................................................................................................................................
+Finished in 187.230893 seconds.
+
+  1) Error:
+test_mounting_sets_script_name(TestRoutingMount):
+ActionController::RoutingError: No route matches "/sprockets/omg"
+    /home/vagrant/rails/actionpack/lib/action_dispatch/routing/route_set.rb:10
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/route_set.rb:75:in `call'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/route_set.rb:75:in `call'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/code_generation.rb:99:in `recognize'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/code_generation.rb:76:in `optimized_each'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/code_generation.rb:98:in `recognize'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/route_set.rb:66:in `call'
+    /home/vagrant/rails/actionpack/lib/action_dispatch/routing/route_set.rb:459:in `call'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-test-0.5.3/lib/rack/mock_session.rb:30:in `request'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-test-0.5.3/lib/rack/test.rb:207:in `process_request'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-test-0.5.3/lib/rack/test.rb:105:in `request'
+    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:289:in `process'
+    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:31:in `get'
+    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:322:in `__send__'
+    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:322:in `get'
+    ./test/dispatch/mount_test.rb:23:in `test_mounting_sets_script_name'
+    /home/vagrant/rails/activesupport/lib/active_support/testing/setup_and_teardown.rb:64:in `__send__'
+    /home/vagrant/rails/activesupport/lib/active_support/testing/setup_and_teardown.rb:64:in `run'
+    /home/vagrant/rails/activesupport/lib/active_support/callbacks.rb:418:in `_run_setup_callbacks'
+    /home/vagrant/rails/activesupport/lib/active_support/testing/setup_and_teardown.rb:62:in `run'
+
+  2) Error:
+test_mounting_with_shorthand(TestRoutingMount):
+ActionController::RoutingError: No route matches "/shorthand/omg"
+    /home/vagrant/rails/actionpack/lib/action_dispatch/routing/route_set.rb:10
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/route_set.rb:75:in `call'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/route_set.rb:75:in `call'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/code_generation.rb:99:in `recognize'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/code_generation.rb:76:in `optimized_each'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/code_generation.rb:98:in `recognize'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/route_set.rb:66:in `call'
+    /home/vagrant/rails/actionpack/lib/action_dispatch/routing/route_set.rb:459:in `call'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-test-0.5.3/lib/rack/mock_session.rb:30:in `request'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-test-0.5.3/lib/rack/test.rb:207:in `process_request'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-test-0.5.3/lib/rack/test.rb:105:in `request'
+    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:289:in `process'
+    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:31:in `get'
+    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:322:in `__send__'
+    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:322:in `get'
+    ./test/dispatch/mount_test.rb:33:in `test_mounting_with_shorthand'
+    /home/vagrant/rails/activesupport/lib/active_support/testing/setup_and_teardown.rb:64:in `__send__'
+    /home/vagrant/rails/activesupport/lib/active_support/testing/setup_and_teardown.rb:64:in `run'
+    /home/vagrant/rails/activesupport/lib/active_support/callbacks.rb:418:in `_run_setup_callbacks'
+    /home/vagrant/rails/activesupport/lib/active_support/testing/setup_and_teardown.rb:62:in `run'
+
+  3) Error:
+test_mounting_works_with_scope(TestRoutingMount):
+ActionController::RoutingError: No route matches "/its_a/sprocket/omg"
+    /home/vagrant/rails/actionpack/lib/action_dispatch/routing/route_set.rb:10
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/route_set.rb:75:in `call'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/route_set.rb:75:in `call'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/code_generation.rb:99:in `recognize'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/code_generation.rb:76:in `optimized_each'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/code_generation.rb:98:in `recognize'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/route_set.rb:66:in `call'
+    /home/vagrant/rails/actionpack/lib/action_dispatch/routing/route_set.rb:459:in `call'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-test-0.5.3/lib/rack/mock_session.rb:30:in `request'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-test-0.5.3/lib/rack/test.rb:207:in `process_request'
+    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-test-0.5.3/lib/rack/test.rb:105:in `request'
+    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:289:in `process'
+    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:31:in `get'
+    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:322:in `__send__'
+    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:322:in `get'
+    ./test/dispatch/mount_test.rb:28:in `test_mounting_works_with_scope'
+    /home/vagrant/rails/activesupport/lib/active_support/testing/setup_and_teardown.rb:64:in `__send__'
+    /home/vagrant/rails/activesupport/lib/active_support/testing/setup_and_teardown.rb:64:in `run'
+    /home/vagrant/rails/activesupport/lib/active_support/callbacks.rb:418:in `_run_setup_callbacks'
+    /home/vagrant/rails/activesupport/lib/active_support/testing/setup_and_teardown.rb:62:in `run'
+
+2625 tests, 11099 assertions, 0 failures, 3 errors
+rake aborted!
+Command failed with status (1): [/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/...]
+
+(See full trace by running task with --trace)
+(in /home/vagrant/rails/actionmailer)
+/home/vagrant/rails/actionpack/lib/action_controller/deprecated/base.rb:14: warning: method redefined; discarding old helpers_path
+/home/vagrant/rails/actionpack/lib/action_controller/deprecated/base.rb:26: warning: method redefined; discarding old helpers_path=
+/home/vagrant/rails/actionpack/lib/action_controller/deprecated/base.rb:14: warning: method redefined; discarding old protected_instance_variables
+/home/vagrant/rails/actionpack/lib/action_controller/deprecated/base.rb:26: warning: method redefined; discarding old protected_instance_variables=
+Loaded suite /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+.............................................................................................................................................................F............................
+Finished in 16.387138 seconds.
+
+  1) Failure:
+test_no_instance_variable(RenderHelperTest)
+    [./test/old_base/mail_render_test.rb:130:in `test_no_instance_variable'
+     /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/mocha-0.9.8/lib/mocha/integration/test_unit/ruby_version_186_and_above.rb:19:in `__send__'
+     /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/mocha-0.9.8/lib/mocha/integration/test_unit/ruby_version_186_and_above.rb:19:in `run']:
+<"Look, subject.nil? is true!"> expected but was
+<"Look, subject.nil? is false!">.
+
+186 tests, 489 assertions, 1 failures, 0 errors
+rake aborted!
+Command failed with status (1): [/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/...]
+
+(See full trace by running task with --trace)
+(in /home/vagrant/rails/activeresource)
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/pathname.rb:263: warning: `*' interpreted as argument prefix
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-0.9.21/lib/bundler.rb:70: warning: instance variable @setup not initialized
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-0.9.21/lib/bundler/runtime.rb:133: warning: method redefined; discarding old path
+Loaded suite /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+...................................................................................................................................................................................................................................
+Finished in 3.447829 seconds.
+
+227 tests, 682 assertions, 0 failures, 0 errors
+(in /home/vagrant/rails/activerecord)
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -w -I"lib:test:test/connections/native_mysql" "/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader.rb" "test/cases/active_schema_test_mysql.rb" "test/cases/adapter_test.rb" "test/cases/aggregations_test.rb" "test/cases/ar_schema_test.rb" "test/cases/associations/belongs_to_associations_test.rb" "test/cases/associations/callbacks_test.rb" "test/cases/associations/cascaded_eager_loading_test.rb" "test/cases/associations/eager_load_includes_full_sti_class_test.rb" "test/cases/associations/eager_load_nested_include_test.rb" "test/cases/associations/eager_singularization_test.rb" "test/cases/associations/eager_test.rb" "test/cases/associations/extension_test.rb" "test/cases/associations/habtm_join_table_test.rb" "test/cases/associations/has_and_belongs_to_many_associations_test.rb" "test/cases/associations/has_many_associations_test.rb" "test/cases/associations/has_many_through_associations_test.rb" "test/cases/associations/has_one_associations_test.rb" "test/cases/associations/has_one_through_associations_test.rb" "test/cases/associations/inner_join_association_test.rb" "test/cases/associations/inverse_associations_test.rb" "test/cases/associations/join_model_test.rb" "test/cases/associations_test.rb" "test/cases/attribute_methods_test.rb" "test/cases/autosave_association_test.rb" "test/cases/base_test.rb" "test/cases/batches_test.rb" "test/cases/binary_test.rb" "test/cases/calculations_test.rb" "test/cases/callbacks_observers_test.rb" "test/cases/callbacks_test.rb" "test/cases/column_alias_test.rb" "test/cases/column_definition_test.rb" "test/cases/connection_pool_test.rb" "test/cases/connection_test_mysql.rb" "test/cases/database_statements_test.rb" "test/cases/date_time_test.rb" "test/cases/defaults_test.rb" "test/cases/deprecated_finder_test.rb" "test/cases/dirty_test.rb" "test/cases/finder_respond_to_test.rb" "test/cases/finder_test.rb" "test/cases/fixtures_test.rb" "test/cases/i18n_test.rb" "test/cases/inheritance_test.rb" "test/cases/invalid_date_test.rb" "test/cases/json_serialization_test.rb" "test/cases/lifecycle_test.rb" "test/cases/locking_test.rb" "test/cases/log_subscriber_test.rb" "test/cases/method_scoping_test.rb" "test/cases/migration_test.rb" "test/cases/mixin_test.rb" "test/cases/modules_test.rb" "test/cases/multiple_db_test.rb" "test/cases/named_scope_test.rb" "test/cases/nested_attributes_test.rb" "test/cases/pk_test.rb" "test/cases/pooled_connections_test.rb" "test/cases/query_cache_test.rb" "test/cases/readonly_test.rb" "test/cases/reflection_test.rb" "test/cases/relations_test.rb" "test/cases/reload_models_test.rb" "test/cases/reserved_word_test_mysql.rb" "test/cases/sanitize_test.rb" "test/cases/schema_dumper_test.rb" "test/cases/serialization_test.rb" "test/cases/timestamp_test.rb" "test/cases/transactions_test.rb" "test/cases/unconnected_test.rb" "test/cases/validations/association_validation_test.rb" "test/cases/validations/i18n_generate_message_validation_test.rb" "test/cases/validations/i18n_validation_test.rb" "test/cases/validations/uniqueness_validation_test.rb" "test/cases/validations_test.rb" "test/cases/xml_serialization_test.rb" "test/cases/yaml_serialization_test.rb" 
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/pathname.rb:263: warning: `*' interpreted as argument prefix
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-0.9.21/lib/bundler.rb:70: warning: instance variable @setup not initialized
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-0.9.21/lib/bundler/runtime.rb:133: warning: method redefined; discarding old path
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/algebra/relations/utilities/compound.rb:36: warning: method redefined; discarding old engine
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/algebra/relations/operations/lock.rb:6: warning: method redefined; discarding old initialize
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/engines/memory/relations/array.rb:9: warning: method redefined; discarding old initialize
+Using native MySQL
+Loaded suite /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+............/test/cases/active_schema_test_mysql.rb:87: warning: discarding old execute
+....../test/cases/active_schema_test_mysql.rb:87: warning: discarding old execute
+........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................../home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/i18n-0.3.6/lib/i18n/core_ext/string/interpolate.rb:95: warning: too many arguments for format string
+......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................../home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/i18n-0.3.6/lib/i18n/core_ext/string/interpolate.rb:95: warning: too many arguments for format string
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/i18n-0.3.6/lib/i18n/core_ext/string/interpolate.rb:95: warning: too many arguments for format string
+........................................................./home/vagrant/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:601: warning: instance variable errno not initialized
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Finished in 77.849434 seconds.
+
+2187 tests, 6939 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -w -I"lib:test:test/connections/native_sqlite3" "/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader.rb" "test/cases/adapter_test.rb" "test/cases/aggregations_test.rb" "test/cases/ar_schema_test.rb" "test/cases/associations/belongs_to_associations_test.rb" "test/cases/associations/callbacks_test.rb" "test/cases/associations/cascaded_eager_loading_test.rb" "test/cases/associations/eager_load_includes_full_sti_class_test.rb" "test/cases/associations/eager_load_nested_include_test.rb" "test/cases/associations/eager_singularization_test.rb" "test/cases/associations/eager_test.rb" "test/cases/associations/extension_test.rb" "test/cases/associations/habtm_join_table_test.rb" "test/cases/associations/has_and_belongs_to_many_associations_test.rb" "test/cases/associations/has_many_associations_test.rb" "test/cases/associations/has_many_through_associations_test.rb" "test/cases/associations/has_one_associations_test.rb" "test/cases/associations/has_one_through_associations_test.rb" "test/cases/associations/inner_join_association_test.rb" "test/cases/associations/inverse_associations_test.rb" "test/cases/associations/join_model_test.rb" "test/cases/associations_test.rb" "test/cases/attribute_methods_test.rb" "test/cases/autosave_association_test.rb" "test/cases/base_test.rb" "test/cases/batches_test.rb" "test/cases/binary_test.rb" "test/cases/calculations_test.rb" "test/cases/callbacks_observers_test.rb" "test/cases/callbacks_test.rb" "test/cases/column_alias_test.rb" "test/cases/column_definition_test.rb" "test/cases/connection_pool_test.rb" "test/cases/copy_table_test_sqlite.rb" "test/cases/database_statements_test.rb" "test/cases/date_time_test.rb" "test/cases/defaults_test.rb" "test/cases/deprecated_finder_test.rb" "test/cases/dirty_test.rb" "test/cases/finder_respond_to_test.rb" "test/cases/finder_test.rb" "test/cases/fixtures_test.rb" "test/cases/i18n_test.rb" "test/cases/inheritance_test.rb" "test/cases/invalid_date_test.rb" "test/cases/json_serialization_test.rb" "test/cases/lifecycle_test.rb" "test/cases/locking_test.rb" "test/cases/log_subscriber_test.rb" "test/cases/method_scoping_test.rb" "test/cases/migration_test.rb" "test/cases/mixin_test.rb" "test/cases/modules_test.rb" "test/cases/multiple_db_test.rb" "test/cases/named_scope_test.rb" "test/cases/nested_attributes_test.rb" "test/cases/pk_test.rb" "test/cases/pooled_connections_test.rb" "test/cases/query_cache_test.rb" "test/cases/readonly_test.rb" "test/cases/reflection_test.rb" "test/cases/relations_test.rb" "test/cases/reload_models_test.rb" "test/cases/sanitize_test.rb" "test/cases/schema_dumper_test.rb" "test/cases/serialization_test.rb" "test/cases/timestamp_test.rb" "test/cases/transactions_test.rb" "test/cases/unconnected_test.rb" "test/cases/validations/association_validation_test.rb" "test/cases/validations/i18n_generate_message_validation_test.rb" "test/cases/validations/i18n_validation_test.rb" "test/cases/validations/uniqueness_validation_test.rb" "test/cases/validations_test.rb" "test/cases/xml_serialization_test.rb" "test/cases/yaml_serialization_test.rb" 
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/pathname.rb:263: warning: `*' interpreted as argument prefix
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-0.9.21/lib/bundler.rb:70: warning: instance variable @setup not initialized
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-0.9.21/lib/bundler/runtime.rb:133: warning: method redefined; discarding old path
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/algebra/relations/utilities/compound.rb:36: warning: method redefined; discarding old engine
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/algebra/relations/operations/lock.rb:6: warning: method redefined; discarding old initialize
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/engines/memory/relations/array.rb:9: warning: method redefined; discarding old initialize
+Using native SQLite3
+Loaded suite /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+...................................................................................................................................................	........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................./home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/i18n-0.3.6/lib/i18n/core_ext/string/interpolate.rb:95: warning: too many arguments for format string
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................../home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/i18n-0.3.6/lib/i18n/core_ext/string/interpolate.rb:95: warning: too many arguments for format string
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/i18n-0.3.6/lib/i18n/core_ext/string/interpolate.rb:95: warning: too many arguments for format string
+..................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Finished in 132.99177 seconds.
+
+2144 tests, 6853 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -w -I"lib:test:test/connections/native_postgresql" "/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader.rb" "test/cases/active_schema_test_postgresql.rb" "test/cases/adapter_test.rb" "test/cases/aggregations_test.rb" "test/cases/ar_schema_test.rb" "test/cases/associations/belongs_to_associations_test.rb" "test/cases/associations/callbacks_test.rb" "test/cases/associations/cascaded_eager_loading_test.rb" "test/cases/associations/eager_load_includes_full_sti_class_test.rb" "test/cases/associations/eager_load_nested_include_test.rb" "test/cases/associations/eager_singularization_test.rb" "test/cases/associations/eager_test.rb" "test/cases/associations/extension_test.rb" "test/cases/associations/habtm_join_table_test.rb" "test/cases/associations/has_and_belongs_to_many_associations_test.rb" "test/cases/associations/has_many_associations_test.rb" "test/cases/associations/has_many_through_associations_test.rb" "test/cases/associations/has_one_associations_test.rb" "test/cases/associations/has_one_through_associations_test.rb" "test/cases/associations/inner_join_association_test.rb" "test/cases/associations/inverse_associations_test.rb" "test/cases/associations/join_model_test.rb" "test/cases/associations_test.rb" "test/cases/attribute_methods_test.rb" "test/cases/autosave_association_test.rb" "test/cases/base_test.rb" "test/cases/batches_test.rb" "test/cases/binary_test.rb" "test/cases/calculations_test.rb" "test/cases/callbacks_observers_test.rb" "test/cases/callbacks_test.rb" "test/cases/column_alias_test.rb" "test/cases/column_definition_test.rb" "test/cases/connection_pool_test.rb" "test/cases/database_statements_test.rb" "test/cases/datatype_test_postgresql.rb" "test/cases/date_time_test.rb" "test/cases/defaults_test.rb" "test/cases/deprecated_finder_test.rb" "test/cases/dirty_test.rb" "test/cases/finder_respond_to_test.rb" "test/cases/finder_test.rb" "test/cases/fixtures_test.rb" "test/cases/i18n_test.rb" "test/cases/inheritance_test.rb" "test/cases/invalid_date_test.rb" "test/cases/json_serialization_test.rb" "test/cases/lifecycle_test.rb" "test/cases/locking_test.rb" "test/cases/log_subscriber_test.rb" "test/cases/method_scoping_test.rb" "test/cases/migration_test.rb" "test/cases/mixin_test.rb" "test/cases/modules_test.rb" "test/cases/multiple_db_test.rb" "test/cases/named_scope_test.rb" "test/cases/nested_attributes_test.rb" "test/cases/pk_test.rb" "test/cases/pooled_connections_test.rb" "test/cases/query_cache_test.rb" "test/cases/readonly_test.rb" "test/cases/reflection_test.rb" "test/cases/relations_test.rb" "test/cases/reload_models_test.rb" "test/cases/sanitize_test.rb" "test/cases/schema_authorization_test_postgresql.rb" "test/cases/schema_dumper_test.rb" "test/cases/schema_test_postgresql.rb" "test/cases/serialization_test.rb" "test/cases/timestamp_test.rb" "test/cases/transactions_test.rb" "test/cases/unconnected_test.rb" "test/cases/validations/association_validation_test.rb" "test/cases/validations/i18n_generate_message_validation_test.rb" "test/cases/validations/i18n_validation_test.rb" "test/cases/validations/uniqueness_validation_test.rb" "test/cases/validations_test.rb" "test/cases/xml_serialization_test.rb" "test/cases/yaml_serialization_test.rb" 
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/pathname.rb:263: warning: `*' interpreted as argument prefix
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-0.9.21/lib/bundler.rb:70: warning: instance variable @setup not initialized
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-0.9.21/lib/bundler/runtime.rb:133: warning: method redefined; discarding old path
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/algebra/relations/utilities/compound.rb:36: warning: method redefined; discarding old engine
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/algebra/relations/operations/lock.rb:6: warning: method redefined; discarding old initialize
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/engines/memory/relations/array.rb:9: warning: method redefined; discarding old initialize
+Using native PostgreSQL
+Loaded suite /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................./home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/i18n-0.3.6/lib/i18n/core_ext/string/interpolate.rb:95: warning: too many arguments for format string
+..................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................../home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/i18n-0.3.6/lib/i18n/core_ext/string/interpolate.rb:95: warning: too many arguments for format string
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/i18n-0.3.6/lib/i18n/core_ext/string/interpolate.rb:95: warning: too many arguments for format string
+............................................................/test/cases/active_schema_test_postgresql.rb:12: warning: discarding old execute
+.............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Finished in 116.851919 seconds.
+
+2227 tests, 7148 assertions, 0 failures, 0 errors
+(in /home/vagrant/rails/railties)
+Loaded suite test/application/configuration_test
+Started
+.....F...................
+Finished in 512.133706 seconds.
+
+  1) Failure:
+test_config.action_controller.perform_caching_=_false(ApplicationTests::ConfigurationTest)
+    [test/application/configuration_test.rb:322:in `test_config.action_controller.perform_caching_=_false'
+     /home/vagrant/rails/activesupport/lib/active_support/testing/isolation.rb:60:in `run'
+     /home/vagrant/rails/activesupport/lib/active_support/testing/isolation.rb:98:in `run_in_isolation'
+     /home/vagrant/rails/activesupport/lib/active_support/testing/isolation.rb:95:in `fork'
+     /home/vagrant/rails/activesupport/lib/active_support/testing/isolation.rb:95:in `run_in_isolation'
+     /home/vagrant/rails/activesupport/lib/active_support/testing/isolation.rb:58:in `run']:
+<"902"> expected to be != to
+<"902">.
+
+25 tests, 29 assertions, 1 failures, 0 errors
+rake aborted!
+Failures
+/home/vagrant/rails/railties/Rakefile:22
+(See full trace by running task with --trace)
+rake aborted!
+Errors in actionpack, actionmailer, railties
+/home/vagrant/rails/Rakefile:17
+(See full trace by running task with --trace)
+vagrant@vagrantbase:~/rails$ 
