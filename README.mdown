@@ -1,12 +1,14 @@
 Rails Test Box (Alpha)
 ====================
 
-This repositories contains everything you need to be a Rails Core contributor in no-time
+This repo will help you to set up everything you need to get the Rails Test Suite running in an isolated environment. It does not require you to set up mysql, postgresql, etc., it will do that for you within a VirtualBox thanks to [Vagrant][2]. The good thing is that it uses [RVM][4] which makes it even possible to run the test suite against different versions of Ruby. This repositories contains everything you need to be a Rails Core contributor in no-time. And the good thing is you can keep using your favorite IDE!
 
-After you have ran through the instruction below you'll be able to run the Rails Test Suite (for the most important databases).
+After you have ran through the instructions below you'll be able to run the complete Rails Test Suite.
 
 ### Setup
-  
+
+First install [Virtualbox][5]
+
 Clone this repository
 
     git clone git://github.com/jeroenvandijk/rails_test_box.git
@@ -18,7 +20,7 @@ Install necessary gems:
 
     bundle install
 
-If you don't have a base box yet you might want to use the base box of the Vagrant guys (Thank you vagrant)
+If you don't have a base box yet you might want to use the base box of the Vagrant guys (Thank you!)
 
     bundle exec vagrant box add base http://files.vagrantup.com/base.box
 
@@ -32,7 +34,7 @@ Wait a while until your box is ready and start running the tests:
     cd rails
     rake
   
-Everything should pass. Now you can start patching Rails and run the tests again.
+Everything should pass. Now you can start patching Rails and run the tests again. See http://guides.rails.info/contributing_to_rails.html for more info.
   
 ### A clean box
 
@@ -43,22 +45,26 @@ When you have wrecked your box or if you just want to update everything without 
     git submodule update
     bundle exec vagrant up
     
-  
-About
------
-This repo, when you follow the above commands, sets up everything you need to get the Rails Test Suite running. It does not require you to set up mysql, postgresql, etc., it will do that for you within the VirtualBox. The good thing is that it uses [RVM](http://rvm.beginrescueend.com) which makes it even possible to run the test suite against different versions of Ruby.
+### Running against different versions of Ruby
 
 Credits
 -------
-Jeroen van Dijk for initiating
-Josh Kalderimis for assistence
-Mitchell Hashimoto and John Bender for bringing Vagrant on the table
-Opscode for developing Chef
+* Jeroen van Dijk for initiating
+* [Josh Kalderimis][1]: for assistence
+* Mitchell Hashimoto and John Bender for bringing [Vagrant][2]: on the table
+* [Opscode][3] for developing Chef for provisioning
+* Wayne E. Seguin for creating [RVM][4] that makes installing different version of Ruby a breeze
 
 Contributors
 ------------
 Jeroen van Dijk
 
+
+[1]: http://www.github.com/joshk
+[2]: http://www.vagrantup.com
+[3]: http://www.opscode.com
+[4]: http://rvm.beginrescueend.com
+[5]: http://www.virtualbox.org/wiki/Downloads
 
 License
 -------
