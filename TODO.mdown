@@ -1,9 +1,7 @@
 TODO
 ----
-* Code clean up, using Chef conventions
-* Add memcache support (currently these tests are skipped)
-* Make tests run faster (by increasing VirtualBox memory?)
-* Optimize installation of gems (see issues)
+* Gemify repo so installation is even easier
+* Experiment with memory to see if tests run faster
 * Add commands to run test suite from the host dir
 * Add comands to run the Rails test suite against multiple ruby versions (JRuby, Ruby, etc)
 * Add commands to easily apply and create patches
