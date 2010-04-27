@@ -13,10 +13,13 @@ define :rvm_install do
     not_if "ls #{node[:rvm][:home]}/rubies | grep #{ruby_version}"
   end
 
-  if ruby_version =~ /^ruby/
-    # part of the rvm_install is the openssl recompilation (from http://cjohansen.no/en/ruby/ruby_version_manager_ubuntu_and_openssl)
-    package "libssl-dev"
+  rvm_use ruby_version
 
+  if ruby_version =~ /^ruby/
+    # part of the rvm_install is the open ssl recompilation (from http://cjohansen.no/en/ruby/ruby_version_manager_ubuntu_and_openssl)
+    package "libssl-dev"
+    
+      # FIXME the command below does not work if the patch version is not added to the ruby version, e.g. ruby-1.8.7 or ruby-1.9.2 will give an error
     execute "Fix install openssl for RVM #{ruby_version}" do
       user "vagrant"
       command "cd #{node[:rvm][:home]}/src/#{ruby_version}/ext/openssl && ruby extconf.rb && make install"

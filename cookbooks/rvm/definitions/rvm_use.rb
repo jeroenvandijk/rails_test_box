@@ -1,7 +1,6 @@
 define :rvm_use do
   ruby_version = RVM.ruby_version params[:name]
   
-  rvm_install ruby_version
   rvm_default ruby_version # FIXME shouldn't be necessary
   
   # The following code has been inspired from Chef's Adam Jacob http://gist.github.com/336951
