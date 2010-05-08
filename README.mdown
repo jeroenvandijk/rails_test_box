@@ -1,11 +1,15 @@
 Rails Test Box (Alpha)
 ====================
 
-This repo will help you to set up everything you need to get the Rails Test Suite running in an isolated environment. It does not require you to set up mysql, postgresql, etc., it will do that for you within a VirtualBox thanks to [Vagrant][2]. The good thing is that it uses [RVM][4] which makes it even possible to run the test suite against different versions of Ruby. This repositories contains everything you need to be a Rails Core contributor in no-time. And the good thing is you can keep using your favorite IDE!
+This repo will help you to set up everything you need to get the Rails Test Suite running in an isolated environment. It does not require you to set up mysql, postgresql, etc., it will do that for you within a VirtualBox thanks to [Vagrant][2]. The good thing is that it uses [RVM][4] which makes it even possible to run the test suite against different versions of Ruby. This repositories contains everything you need to be a Rails Core contributor in no-time. And the good thing is you can keep using your favorite IDE, because the rails directory is shared!
 
 After you have ran through the instructions below you'll be able to run the complete Rails Test Suite.
 
-### Setup
+### Quickstart
+
+If you are only interested in [getting the Box up and running quickly copy the commands from this gist][6]. This will skip all the compiling time and the only thing you pretty much have to wait for is downloading the box.
+
+### Setup from 'scratch'
 
 First install [Virtualbox][5]
 
@@ -65,6 +69,7 @@ Jeroen van Dijk
 [3]: http://www.opscode.com
 [4]: http://rvm.beginrescueend.com
 [5]: http://www.virtualbox.org/wiki/Downloads
+[6]: http://gist.github.com/389621
 
 License
 -------
