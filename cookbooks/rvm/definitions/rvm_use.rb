@@ -14,7 +14,7 @@ define :rvm_use do
                                     }.gsub("\n", '')) do |p,i,o,e|
         o.each_line do |line|
           env_bits = line.strip.split("=")
-          ENV[env_bits[0]] = env_bits[1]
+          ENV[env_bits[0]] = env_bits[1] if env_bits.size == 2
         end
       end
     
