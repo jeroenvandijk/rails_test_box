@@ -3,12 +3,13 @@ maintainer_email  "cookbooks@opscode.com"
 license           "Apache 2.0"
 description       "Installs and configures mysql for client or server"
 long_description  IO.read(File.join(File.dirname(__FILE__), 'README.rdoc'))
-version           "0.15"
+version           "0.24.4"
+recipe            "mysql", "Includes the client recipe to configure a client"
 recipe            "mysql::client", "Installs packages required for mysql clients using run_action magic"
 recipe            "mysql::server", "Installs packages required for mysql servers w/o manual intervention"
 recipe            "mysql::server_ec2", "Performs EC2-specific mountpoint manipulation"
 
-%w{ debian ubuntu }.each do |os|
+%w{ debian ubuntu centos suse fedora redhat}.each do |os|
   supports os
 end
 
@@ -64,7 +65,11 @@ attribute "mysql/tunable/back_log",
   :default => "128"
 
 attribute "mysql/tunable/table_cache",
-  :display_name => "MySQL Tunable Table Cache",
+  :display_name => "MySQL Tunable Table Cache for MySQL < 5.1.3",
+  :default => "128"
+
+attribute "mysql/tunable/table_open_cache",
+  :display_name => "MySQL Tunable Table Cache for MySQL >= 5.1.3",
   :default => "128"
 
 attribute "mysql/tunable/max_heap_table_size",
