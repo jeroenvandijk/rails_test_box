@@ -16,7 +16,7 @@ bash "install rvm" do
   not_if { File.exists?(rvm_home) }
 end
 
-remote_file "#{home}/.bash_profile" do
+cookbook_file "#{home}/.bash_profile" do
   source "bash_profile"
   owner "vagrant"
   group "vagrant"

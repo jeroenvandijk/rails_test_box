@@ -1,6 +1,6 @@
 require_recipe "mysql::server"
 
-remote_file "/tmp/rails_mysql_user_grants.sql"
+cookbook_file "/tmp/rails_mysql_user_grants.sql"
 
 mysql_shell = "/usr/bin/mysql -u root -p#{node[:mysql][:server_root_password]}"
 
