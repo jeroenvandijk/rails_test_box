@@ -1,4 +1,4 @@
-require_recipe "postgresql::dev"
+require_recipe "postgresql"
 
 execute "Create postgres vagrant user" do
   user "postgres"
