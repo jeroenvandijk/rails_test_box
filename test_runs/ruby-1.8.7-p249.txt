@@ -1,221 +1,774 @@
-vagrant@vagrantbase:~/rails$ rake
+vagrant@vagrantup:~/rails$ time rake
+(in /home/vagrant/rails)
 (in /home/vagrant/rails/activesupport)
-./test/time_zone_test.rb:285: warning: ambiguous first argument; put parentheses or even spaces
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -w -I"lib:test" "/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader.rb" "test/benchmarkable_test.rb" "test/buffered_logger_test.rb" "test/caching_test.rb" "test/callback_inheritance_test.rb" "test/callbacks_test.rb" "test/clean_backtrace_test.rb" "test/clean_logger_test.rb" "test/concern_test.rb" "test/configurable_test.rb" "test/core_ext/array_ext_test.rb" "test/core_ext/base64_ext_test.rb" "test/core_ext/bigdecimal_test.rb" "test/core_ext/blank_test.rb" "test/core_ext/class/attribute_accessor_test.rb" "test/core_ext/class/attribute_test.rb" "test/core_ext/class/class_inheritable_attributes_test.rb" "test/core_ext/class/delegating_attributes_test.rb" "test/core_ext/class_test.rb" "test/core_ext/date_ext_test.rb" "test/core_ext/date_time_ext_test.rb" "test/core_ext/duplicable_test.rb" "test/core_ext/duration_test.rb" "test/core_ext/enumerable_test.rb" "test/core_ext/file_test.rb" "test/core_ext/float_ext_test.rb" "test/core_ext/hash_ext_test.rb" "test/core_ext/integer_ext_test.rb" "test/core_ext/kernel_test.rb" "test/core_ext/load_error_test.rb" "test/core_ext/module/anonymous_test.rb" "test/core_ext/module/attr_accessor_with_default_test.rb" "test/core_ext/module/attr_internal_test.rb" "test/core_ext/module/attribute_accessor_test.rb" "test/core_ext/module/attribute_aliasing_test.rb" "test/core_ext/module/reachable_test.rb" "test/core_ext/module/synchronization_test.rb" "test/core_ext/module_test.rb" "test/core_ext/name_error_test.rb" "test/core_ext/numeric_ext_test.rb" "test/core_ext/object/to_param_test.rb" "test/core_ext/object/to_query_test.rb" "test/core_ext/object_and_class_ext_test.rb" "test/core_ext/proc_test.rb" "test/core_ext/range_ext_test.rb" "test/core_ext/regexp_ext_test.rb" "test/core_ext/string_ext_test.rb" "test/core_ext/time_ext_test.rb" "test/core_ext/time_with_zone_test.rb" "test/core_ext/uri_ext_test.rb" "test/dependencies_test.rb" "test/deprecation/proxy_wrappers_test.rb" "test/deprecation_test.rb" "test/descendants_tracker_test.rb" "test/file_update_checker_test.rb" "test/file_watcher_test.rb" "test/flush_cache_on_private_memoization_test.rb" "test/gzip_test.rb" "test/i18n_test.rb" "test/inflector_test.rb" "test/isolation_test.rb" "test/json/decoding_test.rb" "test/json/encoding_test.rb" "test/lazy_load_hooks_test.rb" "test/load_paths_test.rb" "test/log_subscriber_test.rb" "test/memoizable_test.rb" "test/message_encryptor_test.rb" "test/message_verifier_test.rb" "test/multibyte_chars_test.rb" "test/multibyte_unicode_database_test.rb" "test/multibyte_utils_test.rb" "test/notifications_test.rb" "test/option_merger_test.rb" "test/ordered_hash_test.rb" "test/ordered_options_test.rb" "test/rescuable_test.rb" "test/safe_buffer_test.rb" "test/secure_random_test.rb" "test/string_inquirer_test.rb" "test/test_case_test.rb" "test/test_test.rb" "test/time_zone_test.rb" "test/transliterate_test.rb" "test/whiny_nil_test.rb" "test/xml_mini/jdom_engine_test.rb" "test/xml_mini/libxml_engine_test.rb" "test/xml_mini/libxmlsax_engine_test.rb" "test/xml_mini/nokogiri_engine_test.rb" "test/xml_mini/nokogirisax_engine_test.rb" "test/xml_mini/rexml_engine_test.rb" 
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
 Loaded suite /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
 Started
-.........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
-Finished in 9.393244 seconds.
+...................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Finished in 18.459045 seconds.
 
-1865 tests, 8198 assertions, 0 failures, 0 errors
+2323 tests, 9681 assertions, 0 failures, 0 errors
 (in /home/vagrant/rails/activemodel)
 /home/vagrant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/pathname.rb:263: warning: `*' interpreted as argument prefix
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-0.9.21/lib/bundler.rb:70: warning: instance variable @setup not initialized
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-0.9.21/lib/bundler/runtime.rb:133: warning: method redefined; discarding old path
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/algebra/relations/utilities/compound.rb:36: warning: method redefined; discarding old engine
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/algebra/relations/operations/lock.rb:6: warning: method redefined; discarding old initialize
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/engines/memory/relations/array.rb:9: warning: method redefined; discarding old initialize
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-1.0.10/lib/bundler.rb:203: warning: instance variable @checked_for_sudo not initialized
 Loaded suite /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
 Started
-..............................................................................................................................................................................................................................................................................................................
-Finished in 2.192508 seconds.
+............................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Finished in 1.929603 seconds.
 
-302 tests, 976 assertions, 0 failures, 0 errors
+460 tests, 1206 assertions, 0 failures, 0 errors
 (in /home/vagrant/rails/actionpack)
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -w -I"lib:test" "/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader.rb" "test/abstract/abstract_controller_test.rb" "test/abstract/callbacks_test.rb" "test/abstract/collector_test.rb" "test/abstract/helper_test.rb" "test/abstract/layouts_test.rb" "test/abstract/render_test.rb" "test/abstract/translation_test.rb" "test/controller/action_pack_assertions_test.rb" "test/controller/addresses_render_test.rb" "test/controller/assert_select_test.rb" "test/controller/base_test.rb" "test/controller/caching_test.rb" "test/controller/capture_test.rb" "test/controller/content_type_test.rb" "test/controller/deprecation/deprecated_base_methods_test.rb" "test/controller/filters_test.rb" "test/controller/flash_test.rb" "test/controller/helper_test.rb" "test/controller/http_basic_authentication_test.rb" "test/controller/http_digest_authentication_test.rb" "test/controller/http_token_authentication_test.rb" "test/controller/integration_test.rb" "test/controller/layout_test.rb" "test/controller/localized_templates_test.rb" "test/controller/log_subscriber_test.rb" "test/controller/mime_responds_test.rb" "test/controller/new_base/bare_metal_test.rb" "test/controller/new_base/base_test.rb" "test/controller/new_base/content_negotiation_test.rb" "test/controller/new_base/content_type_test.rb" "test/controller/new_base/metal_test.rb" "test/controller/new_base/middleware_test.rb" "test/controller/new_base/render_action_test.rb" "test/controller/new_base/render_file_test.rb" "test/controller/new_base/render_implicit_action_test.rb" "test/controller/new_base/render_layout_test.rb" "test/controller/new_base/render_once_test.rb" "test/controller/new_base/render_partial_test.rb" "test/controller/new_base/render_rjs_test.rb" "test/controller/new_base/render_template_test.rb" "test/controller/new_base/render_test.rb" "test/controller/new_base/render_text_test.rb" "test/controller/new_base/render_xml_test.rb" "test/controller/output_escaping_test.rb" "test/controller/record_identifier_test.rb" "test/controller/redirect_test.rb" "test/controller/render_js_test.rb" "test/controller/render_json_test.rb" "test/controller/render_other_test.rb" "test/controller/render_test.rb" "test/controller/render_xml_test.rb" "test/controller/request/test_request_test.rb" "test/controller/request_forgery_protection_test.rb" "test/controller/rescue_test.rb" "test/controller/resources_test.rb" "test/controller/routing_test.rb" "test/controller/runner_test.rb" "test/controller/selector_test.rb" "test/controller/send_file_test.rb" "test/controller/test_test.rb" "test/controller/url_for_test.rb" "test/controller/url_rewriter_test.rb" "test/controller/view_paths_test.rb" "test/controller/webservice_test.rb" "test/dispatch/callbacks_test.rb" "test/dispatch/cookies_test.rb" "test/dispatch/header_test.rb" "test/dispatch/middleware_stack_test.rb" "test/dispatch/mime_type_test.rb" "test/dispatch/mount_test.rb" "test/dispatch/prefix_generation_test.rb" "test/dispatch/rack_test.rb" "test/dispatch/reloader_test.rb" "test/dispatch/request/json_params_parsing_test.rb" "test/dispatch/request/multipart_params_parsing_test.rb" "test/dispatch/request/query_string_parsing_test.rb" "test/dispatch/request/url_encoded_params_parsing_test.rb" "test/dispatch/request/xml_params_parsing_test.rb" "test/dispatch/request_test.rb" "test/dispatch/response_test.rb" "test/dispatch/routing_assertions_test.rb" "test/dispatch/routing_test.rb" "test/dispatch/session/cookie_store_test.rb" "test/dispatch/session/mem_cache_store_test.rb" "test/dispatch/session/test_session_test.rb" "test/dispatch/show_exceptions_test.rb" "test/dispatch/static_test.rb" "test/dispatch/test_request_test.rb" "test/dispatch/test_response_test.rb" "test/dispatch/uploaded_file_test.rb" "test/dispatch/url_generation_test.rb" "test/template/active_model_helper_test.rb" "test/template/asset_tag_helper_test.rb" "test/template/atom_feed_helper_test.rb" "test/template/capture_helper_test.rb" "test/template/compiled_templates_test.rb" "test/template/date_helper_i18n_test.rb" "test/template/date_helper_test.rb" "test/template/erb/form_for_test.rb" "test/template/erb/tag_helper_test.rb" "test/template/erb_util_test.rb" "test/template/form_helper_test.rb" "test/template/form_options_helper_i18n_test.rb" "test/template/form_options_helper_test.rb" "test/template/form_tag_helper_test.rb" "test/template/html-scanner/cdata_node_test.rb" "test/template/html-scanner/document_test.rb" "test/template/html-scanner/node_test.rb" "test/template/html-scanner/sanitizer_test.rb" "test/template/html-scanner/tag_node_test.rb" "test/template/html-scanner/text_node_test.rb" "test/template/html-scanner/tokenizer_test.rb" "test/template/javascript_helper_test.rb" "test/template/log_subscriber_test.rb" "test/template/lookup_context_test.rb" "test/template/number_helper_i18n_test.rb" "test/template/number_helper_test.rb" "test/template/output_buffer_test.rb" "test/template/output_safety_helper_test.rb" "test/template/prototype_helper_test.rb" "test/template/record_tag_helper_test.rb" "test/template/render_test.rb" "test/template/sanitize_helper_test.rb" "test/template/scriptaculous_helper_test.rb" "test/template/tag_helper_test.rb" "test/template/template_error_test.rb" "test/template/template_test.rb" "test/template/test_case_test.rb" "test/template/test_test.rb" "test/template/testing/fixture_resolver_test.rb" "test/template/testing/null_resolver_test.rb" "test/template/text_helper_test.rb" "test/template/translation_helper_test.rb" "test/template/url_helper_test.rb" 
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/pathname.rb:263: warning: `*' interpreted as argument prefix
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-1.0.10/lib/bundler.rb:203: warning: instance variable @checked_for_sudo not initialized
+/home/vagrant/rails/activesupport/lib/active_support/core_ext/hash/slice.rb:15: warning: method redefined; discarding old slice
+/home/vagrant/rails/activesupport/lib/active_support/core_ext/hash/except.rb:14: warning: method redefined; discarding old except
+/home/vagrant/rails/activesupport/lib/active_support/core_ext/hash/deep_merge.rb:9: warning: method redefined; discarding old deep_merge!
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/mail-2.2.15/lib/mail/core_extensions/smtp.rb:9: warning: method redefined; discarding old tlsconnect
+./test/template/date_helper_test.rb:2716: warning: ambiguous first argument; put parentheses or even spaces
+./test/template/date_helper_test.rb:2720: warning: ambiguous first argument; put parentheses or even spaces
 Loaded suite /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
 Started
-................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................EEE..............................................................................................................................................................................................................................................................................................
-Finished in 187.230893 seconds.
+......................................................................................................................................./home/vagrant/rails/actionpack/test/fixtures/layouts/talk_from_action.erb:1: warning: instance variable @title not initialized
+.......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................multipart/mixed parsing pending fix in Rack 1.2.2
+.................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................test template:1: warning: instance variable @output_buffer not initialized
+....................................................................................
+Finished in 65.983031 seconds.
 
-  1) Error:
-test_mounting_sets_script_name(TestRoutingMount):
-ActionController::RoutingError: No route matches "/sprockets/omg"
-    /home/vagrant/rails/actionpack/lib/action_dispatch/routing/route_set.rb:10
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/route_set.rb:75:in `call'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/route_set.rb:75:in `call'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/code_generation.rb:99:in `recognize'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/code_generation.rb:76:in `optimized_each'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/code_generation.rb:98:in `recognize'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/route_set.rb:66:in `call'
-    /home/vagrant/rails/actionpack/lib/action_dispatch/routing/route_set.rb:459:in `call'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-test-0.5.3/lib/rack/mock_session.rb:30:in `request'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-test-0.5.3/lib/rack/test.rb:207:in `process_request'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-test-0.5.3/lib/rack/test.rb:105:in `request'
-    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:289:in `process'
-    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:31:in `get'
-    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:322:in `__send__'
-    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:322:in `get'
-    ./test/dispatch/mount_test.rb:23:in `test_mounting_sets_script_name'
-    /home/vagrant/rails/activesupport/lib/active_support/testing/setup_and_teardown.rb:64:in `__send__'
-    /home/vagrant/rails/activesupport/lib/active_support/testing/setup_and_teardown.rb:64:in `run'
-    /home/vagrant/rails/activesupport/lib/active_support/callbacks.rb:418:in `_run_setup_callbacks'
-    /home/vagrant/rails/activesupport/lib/active_support/testing/setup_and_teardown.rb:62:in `run'
+3091 tests, 14772 assertions, 0 failures, 0 errors
+Loaded suite /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+..............................................................................
+Finished in 10.426428 seconds.
 
-  2) Error:
-test_mounting_with_shorthand(TestRoutingMount):
-ActionController::RoutingError: No route matches "/shorthand/omg"
-    /home/vagrant/rails/actionpack/lib/action_dispatch/routing/route_set.rb:10
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/route_set.rb:75:in `call'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/route_set.rb:75:in `call'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/code_generation.rb:99:in `recognize'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/code_generation.rb:76:in `optimized_each'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/code_generation.rb:98:in `recognize'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/route_set.rb:66:in `call'
-    /home/vagrant/rails/actionpack/lib/action_dispatch/routing/route_set.rb:459:in `call'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-test-0.5.3/lib/rack/mock_session.rb:30:in `request'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-test-0.5.3/lib/rack/test.rb:207:in `process_request'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-test-0.5.3/lib/rack/test.rb:105:in `request'
-    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:289:in `process'
-    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:31:in `get'
-    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:322:in `__send__'
-    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:322:in `get'
-    ./test/dispatch/mount_test.rb:33:in `test_mounting_with_shorthand'
-    /home/vagrant/rails/activesupport/lib/active_support/testing/setup_and_teardown.rb:64:in `__send__'
-    /home/vagrant/rails/activesupport/lib/active_support/testing/setup_and_teardown.rb:64:in `run'
-    /home/vagrant/rails/activesupport/lib/active_support/callbacks.rb:418:in `_run_setup_callbacks'
-    /home/vagrant/rails/activesupport/lib/active_support/testing/setup_and_teardown.rb:62:in `run'
-
-  3) Error:
-test_mounting_works_with_scope(TestRoutingMount):
-ActionController::RoutingError: No route matches "/its_a/sprocket/omg"
-    /home/vagrant/rails/actionpack/lib/action_dispatch/routing/route_set.rb:10
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/route_set.rb:75:in `call'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/route_set.rb:75:in `call'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/code_generation.rb:99:in `recognize'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/code_generation.rb:76:in `optimized_each'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/code_generation.rb:98:in `recognize'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-mount-0.6.0/lib/rack/mount/recognition/route_set.rb:66:in `call'
-    /home/vagrant/rails/actionpack/lib/action_dispatch/routing/route_set.rb:459:in `call'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-test-0.5.3/lib/rack/mock_session.rb:30:in `request'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-test-0.5.3/lib/rack/test.rb:207:in `process_request'
-    /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rack-test-0.5.3/lib/rack/test.rb:105:in `request'
-    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:289:in `process'
-    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:31:in `get'
-    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:322:in `__send__'
-    /home/vagrant/rails/actionpack/lib/action_dispatch/testing/integration.rb:322:in `get'
-    ./test/dispatch/mount_test.rb:28:in `test_mounting_works_with_scope'
-    /home/vagrant/rails/activesupport/lib/active_support/testing/setup_and_teardown.rb:64:in `__send__'
-    /home/vagrant/rails/activesupport/lib/active_support/testing/setup_and_teardown.rb:64:in `run'
-    /home/vagrant/rails/activesupport/lib/active_support/callbacks.rb:418:in `_run_setup_callbacks'
-    /home/vagrant/rails/activesupport/lib/active_support/testing/setup_and_teardown.rb:62:in `run'
-
-2625 tests, 11099 assertions, 0 failures, 3 errors
-rake aborted!
-Command failed with status (1): [/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/...]
-
-(See full trace by running task with --trace)
+78 tests, 154 assertions, 0 failures, 0 errors
 (in /home/vagrant/rails/actionmailer)
-/home/vagrant/rails/actionpack/lib/action_controller/deprecated/base.rb:14: warning: method redefined; discarding old helpers_path
-/home/vagrant/rails/actionpack/lib/action_controller/deprecated/base.rb:26: warning: method redefined; discarding old helpers_path=
-/home/vagrant/rails/actionpack/lib/action_controller/deprecated/base.rb:14: warning: method redefined; discarding old protected_instance_variables
-/home/vagrant/rails/actionpack/lib/action_controller/deprecated/base.rb:26: warning: method redefined; discarding old protected_instance_variables=
 Loaded suite /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
 Started
-.............................................................................................................................................................F............................
-Finished in 16.387138 seconds.
+................................................................................................................................................................................
+Finished in 5.994295 seconds.
 
-  1) Failure:
-test_no_instance_variable(RenderHelperTest)
-    [./test/old_base/mail_render_test.rb:130:in `test_no_instance_variable'
-     /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/mocha-0.9.8/lib/mocha/integration/test_unit/ruby_version_186_and_above.rb:19:in `__send__'
-     /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/mocha-0.9.8/lib/mocha/integration/test_unit/ruby_version_186_and_above.rb:19:in `run']:
-<"Look, subject.nil? is true!"> expected but was
-<"Look, subject.nil? is false!">.
-
-186 tests, 489 assertions, 1 failures, 0 errors
-rake aborted!
-Command failed with status (1): [/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/...]
-
-(See full trace by running task with --trace)
+176 tests, 471 assertions, 0 failures, 0 errors
 (in /home/vagrant/rails/activeresource)
 /home/vagrant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/pathname.rb:263: warning: `*' interpreted as argument prefix
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-0.9.21/lib/bundler.rb:70: warning: instance variable @setup not initialized
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-0.9.21/lib/bundler/runtime.rb:133: warning: method redefined; discarding old path
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-1.0.10/lib/bundler.rb:203: warning: instance variable @checked_for_sudo not initialized
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/ruby-debug-0.10.4/cli/ruby-debug/commands/irb.rb:96: warning: method redefined; discarding old evaluate
 Loaded suite /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
 Started
-...................................................................................................................................................................................................................................
-Finished in 3.447829 seconds.
+............................................................................................................................................................................................................................................................................................
+Finished in 3.151132 seconds.
 
-227 tests, 682 assertions, 0 failures, 0 errors
+284 tests, 842 assertions, 0 failures, 0 errors
 (in /home/vagrant/rails/activerecord)
-/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -w -I"lib:test:test/connections/native_mysql" "/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader.rb" "test/cases/active_schema_test_mysql.rb" "test/cases/adapter_test.rb" "test/cases/aggregations_test.rb" "test/cases/ar_schema_test.rb" "test/cases/associations/belongs_to_associations_test.rb" "test/cases/associations/callbacks_test.rb" "test/cases/associations/cascaded_eager_loading_test.rb" "test/cases/associations/eager_load_includes_full_sti_class_test.rb" "test/cases/associations/eager_load_nested_include_test.rb" "test/cases/associations/eager_singularization_test.rb" "test/cases/associations/eager_test.rb" "test/cases/associations/extension_test.rb" "test/cases/associations/habtm_join_table_test.rb" "test/cases/associations/has_and_belongs_to_many_associations_test.rb" "test/cases/associations/has_many_associations_test.rb" "test/cases/associations/has_many_through_associations_test.rb" "test/cases/associations/has_one_associations_test.rb" "test/cases/associations/has_one_through_associations_test.rb" "test/cases/associations/inner_join_association_test.rb" "test/cases/associations/inverse_associations_test.rb" "test/cases/associations/join_model_test.rb" "test/cases/associations_test.rb" "test/cases/attribute_methods_test.rb" "test/cases/autosave_association_test.rb" "test/cases/base_test.rb" "test/cases/batches_test.rb" "test/cases/binary_test.rb" "test/cases/calculations_test.rb" "test/cases/callbacks_observers_test.rb" "test/cases/callbacks_test.rb" "test/cases/column_alias_test.rb" "test/cases/column_definition_test.rb" "test/cases/connection_pool_test.rb" "test/cases/connection_test_mysql.rb" "test/cases/database_statements_test.rb" "test/cases/date_time_test.rb" "test/cases/defaults_test.rb" "test/cases/deprecated_finder_test.rb" "test/cases/dirty_test.rb" "test/cases/finder_respond_to_test.rb" "test/cases/finder_test.rb" "test/cases/fixtures_test.rb" "test/cases/i18n_test.rb" "test/cases/inheritance_test.rb" "test/cases/invalid_date_test.rb" "test/cases/json_serialization_test.rb" "test/cases/lifecycle_test.rb" "test/cases/locking_test.rb" "test/cases/log_subscriber_test.rb" "test/cases/method_scoping_test.rb" "test/cases/migration_test.rb" "test/cases/mixin_test.rb" "test/cases/modules_test.rb" "test/cases/multiple_db_test.rb" "test/cases/named_scope_test.rb" "test/cases/nested_attributes_test.rb" "test/cases/pk_test.rb" "test/cases/pooled_connections_test.rb" "test/cases/query_cache_test.rb" "test/cases/readonly_test.rb" "test/cases/reflection_test.rb" "test/cases/relations_test.rb" "test/cases/reload_models_test.rb" "test/cases/reserved_word_test_mysql.rb" "test/cases/sanitize_test.rb" "test/cases/schema_dumper_test.rb" "test/cases/serialization_test.rb" "test/cases/timestamp_test.rb" "test/cases/transactions_test.rb" "test/cases/unconnected_test.rb" "test/cases/validations/association_validation_test.rb" "test/cases/validations/i18n_generate_message_validation_test.rb" "test/cases/validations/i18n_validation_test.rb" "test/cases/validations/uniqueness_validation_test.rb" "test/cases/validations_test.rb" "test/cases/xml_serialization_test.rb" "test/cases/yaml_serialization_test.rb" 
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -w -I"lib:test:test/connections/native_mysql" "/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader.rb" "test/cases/adapter_test.rb" "test/cases/adapters/mysql/active_schema_test.rb" "test/cases/adapters/mysql/connection_test.rb" "test/cases/adapters/mysql/reserved_word_test.rb" "test/cases/adapters/mysql/sp_test.rb" "test/cases/aggregations_test.rb" "test/cases/ar_schema_test.rb" "test/cases/associations/belongs_to_associations_test.rb" "test/cases/associations/callbacks_test.rb" "test/cases/associations/cascaded_eager_loading_test.rb" "test/cases/associations/eager_load_includes_full_sti_class_test.rb" "test/cases/associations/eager_load_nested_include_test.rb" "test/cases/associations/eager_singularization_test.rb" "test/cases/associations/eager_test.rb" "test/cases/associations/extension_test.rb" "test/cases/associations/habtm_join_table_test.rb" "test/cases/associations/has_and_belongs_to_many_associations_test.rb" "test/cases/associations/has_many_associations_test.rb" "test/cases/associations/has_many_through_associations_test.rb" "test/cases/associations/has_one_associations_test.rb" "test/cases/associations/has_one_through_associations_test.rb" "test/cases/associations/identity_map_test.rb" "test/cases/associations/inner_join_association_test.rb" "test/cases/associations/inverse_associations_test.rb" "test/cases/associations/join_model_test.rb" "test/cases/associations_test.rb" "test/cases/attribute_methods/read_test.rb" "test/cases/attribute_methods_test.rb" "test/cases/autosave_association_test.rb" "test/cases/base_test.rb" "test/cases/batches_test.rb" "test/cases/binary_test.rb" "test/cases/bind_parameter_test.rb" "test/cases/calculations_test.rb" "test/cases/callbacks_test.rb" "test/cases/clone_test.rb" "test/cases/coders/yaml_column_test.rb" "test/cases/column_alias_test.rb" "test/cases/column_definition_test.rb" "test/cases/connection_management_test.rb" "test/cases/connection_pool_test.rb" "test/cases/counter_cache_test.rb" "test/cases/custom_locking_test.rb" "test/cases/database_statements_test.rb" "test/cases/date_time_test.rb" "test/cases/defaults_test.rb" "test/cases/deprecated_finder_test.rb" "test/cases/dirty_test.rb" "test/cases/dup_test.rb" "test/cases/dynamic_finder_match_test.rb" "test/cases/finder_respond_to_test.rb" "test/cases/finder_test.rb" "test/cases/fixtures_test.rb" "test/cases/habtm_destroy_order_test.rb" "test/cases/i18n_test.rb" "test/cases/identity_map_test.rb" "test/cases/inheritance_test.rb" "test/cases/invalid_date_test.rb" "test/cases/invertible_migration_test.rb" "test/cases/json_serialization_test.rb" "test/cases/lifecycle_test.rb" "test/cases/locking_test.rb" "test/cases/log_subscriber_test.rb" "test/cases/mass_assignment_security_test.rb" "test/cases/method_scoping_test.rb" "test/cases/migration/command_recorder_test.rb" "test/cases/migration_test.rb" "test/cases/mixin_test.rb" "test/cases/modules_test.rb" "test/cases/multiple_db_test.rb" "test/cases/named_scope_test.rb" "test/cases/nested_attributes_test.rb" "test/cases/persistence_test.rb" "test/cases/pooled_connections_test.rb" "test/cases/primary_keys_test.rb" "test/cases/query_cache_test.rb" "test/cases/quoting_test.rb" "test/cases/readonly_test.rb" "test/cases/reflection_test.rb" "test/cases/relation_scoping_test.rb" "test/cases/relation_test.rb" "test/cases/relations_test.rb" "test/cases/reload_models_test.rb" "test/cases/sanitize_test.rb" "test/cases/schema_dumper_test.rb" "test/cases/serialization_test.rb" "test/cases/session_store/session_test.rb" "test/cases/timestamp_test.rb" "test/cases/transaction_callbacks_test.rb" "test/cases/transactions_test.rb" "test/cases/unconnected_test.rb" "test/cases/validations/association_validation_test.rb" "test/cases/validations/i18n_generate_message_validation_test.rb" "test/cases/validations/i18n_validation_test.rb" "test/cases/validations/uniqueness_validation_test.rb" "test/cases/validations_test.rb" "test/cases/xml_serialization_test.rb" "test/cases/yaml_serialization_test.rb" 
 /home/vagrant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/pathname.rb:263: warning: `*' interpreted as argument prefix
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-0.9.21/lib/bundler.rb:70: warning: instance variable @setup not initialized
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-0.9.21/lib/bundler/runtime.rb:133: warning: method redefined; discarding old path
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/algebra/relations/utilities/compound.rb:36: warning: method redefined; discarding old engine
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/algebra/relations/operations/lock.rb:6: warning: method redefined; discarding old initialize
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/engines/memory/relations/array.rb:9: warning: method redefined; discarding old initialize
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-1.0.10/lib/bundler.rb:203: warning: instance variable @checked_for_sudo not initialized
 Using native MySQL
 Loaded suite /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
 Started
-............/test/cases/active_schema_test_mysql.rb:87: warning: discarding old execute
-....../test/cases/active_schema_test_mysql.rb:87: warning: discarding old execute
-........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................../home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/i18n-0.3.6/lib/i18n/core_ext/string/interpolate.rb:95: warning: too many arguments for format string
-......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................../home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/i18n-0.3.6/lib/i18n/core_ext/string/interpolate.rb:95: warning: too many arguments for format string
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/i18n-0.3.6/lib/i18n/core_ext/string/interpolate.rb:95: warning: too many arguments for format string
-........................................................./home/vagrant/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:601: warning: instance variable errno not initialized
-................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
-Finished in 77.849434 seconds.
+............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................./home/vagrant/rails/activerecord/lib/active_record/attribute_methods/write.rb:13: warning: method redefined; discarding old name=
+/home/vagrant/rails/activerecord/lib/active_record/attribute_methods/read.rb:73: warning: discarding old name
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................../home/vagrant/rails/activerecord/test/migrations/interleaved/pass_3/3_interleaved_innocent_jointable.rb:2: warning: redefine up
+/home/vagrant/rails/activerecord/test/migrations/interleaved/pass_3/3_interleaved_innocent_jointable.rb:9: warning: redefine down
+/home/vagrant/rails/activerecord/test/migrations/interleaved/pass_3/1_interleaved_people_have_last_names.rb:2: warning: redefine up
+/home/vagrant/rails/activerecord/test/migrations/interleaved/pass_3/1_interleaved_people_have_last_names.rb:6: warning: redefine down
+............................................................................................................................................................................................................................................................................................................................................................................................................................................../home/vagrant/rails/activerecord/lib/active_record/connection_adapters/mysql_adapter.rb:666: warning: instance variable errno not initialized
+.............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Finished in 120.776173 seconds.
 
-2187 tests, 6939 assertions, 0 failures, 0 errors
-/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -w -I"lib:test:test/connections/native_sqlite3" "/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader.rb" "test/cases/adapter_test.rb" "test/cases/aggregations_test.rb" "test/cases/ar_schema_test.rb" "test/cases/associations/belongs_to_associations_test.rb" "test/cases/associations/callbacks_test.rb" "test/cases/associations/cascaded_eager_loading_test.rb" "test/cases/associations/eager_load_includes_full_sti_class_test.rb" "test/cases/associations/eager_load_nested_include_test.rb" "test/cases/associations/eager_singularization_test.rb" "test/cases/associations/eager_test.rb" "test/cases/associations/extension_test.rb" "test/cases/associations/habtm_join_table_test.rb" "test/cases/associations/has_and_belongs_to_many_associations_test.rb" "test/cases/associations/has_many_associations_test.rb" "test/cases/associations/has_many_through_associations_test.rb" "test/cases/associations/has_one_associations_test.rb" "test/cases/associations/has_one_through_associations_test.rb" "test/cases/associations/inner_join_association_test.rb" "test/cases/associations/inverse_associations_test.rb" "test/cases/associations/join_model_test.rb" "test/cases/associations_test.rb" "test/cases/attribute_methods_test.rb" "test/cases/autosave_association_test.rb" "test/cases/base_test.rb" "test/cases/batches_test.rb" "test/cases/binary_test.rb" "test/cases/calculations_test.rb" "test/cases/callbacks_observers_test.rb" "test/cases/callbacks_test.rb" "test/cases/column_alias_test.rb" "test/cases/column_definition_test.rb" "test/cases/connection_pool_test.rb" "test/cases/copy_table_test_sqlite.rb" "test/cases/database_statements_test.rb" "test/cases/date_time_test.rb" "test/cases/defaults_test.rb" "test/cases/deprecated_finder_test.rb" "test/cases/dirty_test.rb" "test/cases/finder_respond_to_test.rb" "test/cases/finder_test.rb" "test/cases/fixtures_test.rb" "test/cases/i18n_test.rb" "test/cases/inheritance_test.rb" "test/cases/invalid_date_test.rb" "test/cases/json_serialization_test.rb" "test/cases/lifecycle_test.rb" "test/cases/locking_test.rb" "test/cases/log_subscriber_test.rb" "test/cases/method_scoping_test.rb" "test/cases/migration_test.rb" "test/cases/mixin_test.rb" "test/cases/modules_test.rb" "test/cases/multiple_db_test.rb" "test/cases/named_scope_test.rb" "test/cases/nested_attributes_test.rb" "test/cases/pk_test.rb" "test/cases/pooled_connections_test.rb" "test/cases/query_cache_test.rb" "test/cases/readonly_test.rb" "test/cases/reflection_test.rb" "test/cases/relations_test.rb" "test/cases/reload_models_test.rb" "test/cases/sanitize_test.rb" "test/cases/schema_dumper_test.rb" "test/cases/serialization_test.rb" "test/cases/timestamp_test.rb" "test/cases/transactions_test.rb" "test/cases/unconnected_test.rb" "test/cases/validations/association_validation_test.rb" "test/cases/validations/i18n_generate_message_validation_test.rb" "test/cases/validations/i18n_validation_test.rb" "test/cases/validations/uniqueness_validation_test.rb" "test/cases/validations_test.rb" "test/cases/xml_serialization_test.rb" "test/cases/yaml_serialization_test.rb" 
+2714 tests, 8194 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -w -I"lib:test:test/connections/native_mysql2" "/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader.rb" "test/cases/adapter_test.rb" "test/cases/adapters/mysql2/active_schema_test.rb" "test/cases/adapters/mysql2/connection_test.rb" "test/cases/adapters/mysql2/reserved_word_test.rb" "test/cases/aggregations_test.rb" "test/cases/ar_schema_test.rb" "test/cases/associations/belongs_to_associations_test.rb" "test/cases/associations/callbacks_test.rb" "test/cases/associations/cascaded_eager_loading_test.rb" "test/cases/associations/eager_load_includes_full_sti_class_test.rb" "test/cases/associations/eager_load_nested_include_test.rb" "test/cases/associations/eager_singularization_test.rb" "test/cases/associations/eager_test.rb" "test/cases/associations/extension_test.rb" "test/cases/associations/habtm_join_table_test.rb" "test/cases/associations/has_and_belongs_to_many_associations_test.rb" "test/cases/associations/has_many_associations_test.rb" "test/cases/associations/has_many_through_associations_test.rb" "test/cases/associations/has_one_associations_test.rb" "test/cases/associations/has_one_through_associations_test.rb" "test/cases/associations/identity_map_test.rb" "test/cases/associations/inner_join_association_test.rb" "test/cases/associations/inverse_associations_test.rb" "test/cases/associations/join_model_test.rb" "test/cases/associations_test.rb" "test/cases/attribute_methods/read_test.rb" "test/cases/attribute_methods_test.rb" "test/cases/autosave_association_test.rb" "test/cases/base_test.rb" "test/cases/batches_test.rb" "test/cases/binary_test.rb" "test/cases/bind_parameter_test.rb" "test/cases/calculations_test.rb" "test/cases/callbacks_test.rb" "test/cases/clone_test.rb" "test/cases/coders/yaml_column_test.rb" "test/cases/column_alias_test.rb" "test/cases/column_definition_test.rb" "test/cases/connection_management_test.rb" "test/cases/connection_pool_test.rb" "test/cases/counter_cache_test.rb" "test/cases/custom_locking_test.rb" "test/cases/database_statements_test.rb" "test/cases/date_time_test.rb" "test/cases/defaults_test.rb" "test/cases/deprecated_finder_test.rb" "test/cases/dirty_test.rb" "test/cases/dup_test.rb" "test/cases/dynamic_finder_match_test.rb" "test/cases/finder_respond_to_test.rb" "test/cases/finder_test.rb" "test/cases/fixtures_test.rb" "test/cases/habtm_destroy_order_test.rb" "test/cases/i18n_test.rb" "test/cases/identity_map_test.rb" "test/cases/inheritance_test.rb" "test/cases/invalid_date_test.rb" "test/cases/invertible_migration_test.rb" "test/cases/json_serialization_test.rb" "test/cases/lifecycle_test.rb" "test/cases/locking_test.rb" "test/cases/log_subscriber_test.rb" "test/cases/mass_assignment_security_test.rb" "test/cases/method_scoping_test.rb" "test/cases/migration/command_recorder_test.rb" "test/cases/migration_test.rb" "test/cases/mixin_test.rb" "test/cases/modules_test.rb" "test/cases/multiple_db_test.rb" "test/cases/named_scope_test.rb" "test/cases/nested_attributes_test.rb" "test/cases/persistence_test.rb" "test/cases/pooled_connections_test.rb" "test/cases/primary_keys_test.rb" "test/cases/query_cache_test.rb" "test/cases/quoting_test.rb" "test/cases/readonly_test.rb" "test/cases/reflection_test.rb" "test/cases/relation_scoping_test.rb" "test/cases/relation_test.rb" "test/cases/relations_test.rb" "test/cases/reload_models_test.rb" "test/cases/sanitize_test.rb" "test/cases/schema_dumper_test.rb" "test/cases/serialization_test.rb" "test/cases/session_store/session_test.rb" "test/cases/timestamp_test.rb" "test/cases/transaction_callbacks_test.rb" "test/cases/transactions_test.rb" "test/cases/unconnected_test.rb" "test/cases/validations/association_validation_test.rb" "test/cases/validations/i18n_generate_message_validation_test.rb" "test/cases/validations/i18n_validation_test.rb" "test/cases/validations/uniqueness_validation_test.rb" "test/cases/validations_test.rb" "test/cases/xml_serialization_test.rb" "test/cases/yaml_serialization_test.rb" 
 /home/vagrant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/pathname.rb:263: warning: `*' interpreted as argument prefix
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-0.9.21/lib/bundler.rb:70: warning: instance variable @setup not initialized
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-0.9.21/lib/bundler/runtime.rb:133: warning: method redefined; discarding old path
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/algebra/relations/utilities/compound.rb:36: warning: method redefined; discarding old engine
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/algebra/relations/operations/lock.rb:6: warning: method redefined; discarding old initialize
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/engines/memory/relations/array.rb:9: warning: method redefined; discarding old initialize
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-1.0.10/lib/bundler.rb:203: warning: instance variable @checked_for_sudo not initialized
+Using native Mysql2
+Loaded suite /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
+Started
+.................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................../home/vagrant/rails/activerecord/lib/active_record/attribute_methods/write.rb:13: warning: method redefined; discarding old name=
+/home/vagrant/rails/activerecord/lib/active_record/attribute_methods/read.rb:73: warning: discarding old name
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................../home/vagrant/rails/activerecord/test/migrations/interleaved/pass_3/3_interleaved_innocent_jointable.rb:2: warning: redefine up
+/home/vagrant/rails/activerecord/test/migrations/interleaved/pass_3/3_interleaved_innocent_jointable.rb:9: warning: redefine down
+/home/vagrant/rails/activerecord/test/migrations/interleaved/pass_3/1_interleaved_people_have_last_names.rb:2: warning: redefine up
+/home/vagrant/rails/activerecord/test/migrations/interleaved/pass_3/1_interleaved_people_have_last_names.rb:6: warning: redefine down
+...................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Finished in 122.562778 seconds.
+
+2696 tests, 8143 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -w -I"lib:test:test/connections/native_sqlite3" "/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader.rb" "test/cases/adapter_test.rb" "test/cases/adapters/sqlite3/copy_table_test.rb" "test/cases/adapters/sqlite3/sqlite3_adapter_test.rb" "test/cases/aggregations_test.rb" "test/cases/ar_schema_test.rb" "test/cases/associations/belongs_to_associations_test.rb" "test/cases/associations/callbacks_test.rb" "test/cases/associations/cascaded_eager_loading_test.rb" "test/cases/associations/eager_load_includes_full_sti_class_test.rb" "test/cases/associations/eager_load_nested_include_test.rb" "test/cases/associations/eager_singularization_test.rb" "test/cases/associations/eager_test.rb" "test/cases/associations/extension_test.rb" "test/cases/associations/habtm_join_table_test.rb" "test/cases/associations/has_and_belongs_to_many_associations_test.rb" "test/cases/associations/has_many_associations_test.rb" "test/cases/associations/has_many_through_associations_test.rb" "test/cases/associations/has_one_associations_test.rb" "test/cases/associations/has_one_through_associations_test.rb" "test/cases/associations/identity_map_test.rb" "test/cases/associations/inner_join_association_test.rb" "test/cases/associations/inverse_associations_test.rb" "test/cases/associations/join_model_test.rb" "test/cases/associations_test.rb" "test/cases/attribute_methods/read_test.rb" "test/cases/attribute_methods_test.rb" "test/cases/autosave_association_test.rb" "test/cases/base_test.rb" "test/cases/batches_test.rb" "test/cases/binary_test.rb" "test/cases/bind_parameter_test.rb" "test/cases/calculations_test.rb" "test/cases/callbacks_test.rb" "test/cases/clone_test.rb" "test/cases/coders/yaml_column_test.rb" "test/cases/column_alias_test.rb" "test/cases/column_definition_test.rb" "test/cases/connection_management_test.rb" "test/cases/connection_pool_test.rb" "test/cases/counter_cache_test.rb" "test/cases/custom_locking_test.rb" "test/cases/database_statements_test.rb" "test/cases/date_time_test.rb" "test/cases/defaults_test.rb" "test/cases/deprecated_finder_test.rb" "test/cases/dirty_test.rb" "test/cases/dup_test.rb" "test/cases/dynamic_finder_match_test.rb" "test/cases/finder_respond_to_test.rb" "test/cases/finder_test.rb" "test/cases/fixtures_test.rb" "test/cases/habtm_destroy_order_test.rb" "test/cases/i18n_test.rb" "test/cases/identity_map_test.rb" "test/cases/inheritance_test.rb" "test/cases/invalid_date_test.rb" "test/cases/invertible_migration_test.rb" "test/cases/json_serialization_test.rb" "test/cases/lifecycle_test.rb" "test/cases/locking_test.rb" "test/cases/log_subscriber_test.rb" "test/cases/mass_assignment_security_test.rb" "test/cases/method_scoping_test.rb" "test/cases/migration/command_recorder_test.rb" "test/cases/migration_test.rb" "test/cases/mixin_test.rb" "test/cases/modules_test.rb" "test/cases/multiple_db_test.rb" "test/cases/named_scope_test.rb" "test/cases/nested_attributes_test.rb" "test/cases/persistence_test.rb" "test/cases/pooled_connections_test.rb" "test/cases/primary_keys_test.rb" "test/cases/query_cache_test.rb" "test/cases/quoting_test.rb" "test/cases/readonly_test.rb" "test/cases/reflection_test.rb" "test/cases/relation_scoping_test.rb" "test/cases/relation_test.rb" "test/cases/relations_test.rb" "test/cases/reload_models_test.rb" "test/cases/sanitize_test.rb" "test/cases/schema_dumper_test.rb" "test/cases/serialization_test.rb" "test/cases/session_store/session_test.rb" "test/cases/timestamp_test.rb" "test/cases/transaction_callbacks_test.rb" "test/cases/transactions_test.rb" "test/cases/unconnected_test.rb" "test/cases/validations/association_validation_test.rb" "test/cases/validations/i18n_generate_message_validation_test.rb" "test/cases/validations/i18n_validation_test.rb" "test/cases/validations/uniqueness_validation_test.rb" "test/cases/validations_test.rb" "test/cases/xml_serialization_test.rb" "test/cases/yaml_serialization_test.rb" 
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/pathname.rb:263: warning: `*' interpreted as argument prefix
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-1.0.10/lib/bundler.rb:203: warning: instance variable @checked_for_sudo not initialized
 Using native SQLite3
 Loaded suite /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
 Started
-...................................................................................................................................................	........................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................./home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/i18n-0.3.6/lib/i18n/core_ext/string/interpolate.rb:95: warning: too many arguments for format string
-................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................../home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/i18n-0.3.6/lib/i18n/core_ext/string/interpolate.rb:95: warning: too many arguments for format string
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/i18n-0.3.6/lib/i18n/core_ext/string/interpolate.rb:95: warning: too many arguments for format string
-..................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
-Finished in 132.99177 seconds.
+......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................../home/vagrant/rails/activerecord/lib/active_record/attribute_methods/write.rb:13: warning: method redefined; discarding old name=
+/home/vagrant/rails/activerecord/lib/active_record/attribute_methods/read.rb:73: warning: discarding old name
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................/home/vagrant/rails/activerecord/test/migrations/interleaved/pass_3/3_interleaved_innocent_jointable.rb:2: warning: redefine up
+/home/vagrant/rails/activerecord/test/migrations/interleaved/pass_3/3_interleaved_innocent_jointable.rb:9: warning: redefine down
+/home/vagrant/rails/activerecord/test/migrations/interleaved/pass_3/1_interleaved_people_have_last_names.rb:2: warning: redefine up
+/home/vagrant/rails/activerecord/test/migrations/interleaved/pass_3/1_interleaved_people_have_last_names.rb:6: warning: redefine down
+...............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Finished in 172.011452 seconds.
 
-2144 tests, 6853 assertions, 0 failures, 0 errors
-/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -w -I"lib:test:test/connections/native_postgresql" "/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader.rb" "test/cases/active_schema_test_postgresql.rb" "test/cases/adapter_test.rb" "test/cases/aggregations_test.rb" "test/cases/ar_schema_test.rb" "test/cases/associations/belongs_to_associations_test.rb" "test/cases/associations/callbacks_test.rb" "test/cases/associations/cascaded_eager_loading_test.rb" "test/cases/associations/eager_load_includes_full_sti_class_test.rb" "test/cases/associations/eager_load_nested_include_test.rb" "test/cases/associations/eager_singularization_test.rb" "test/cases/associations/eager_test.rb" "test/cases/associations/extension_test.rb" "test/cases/associations/habtm_join_table_test.rb" "test/cases/associations/has_and_belongs_to_many_associations_test.rb" "test/cases/associations/has_many_associations_test.rb" "test/cases/associations/has_many_through_associations_test.rb" "test/cases/associations/has_one_associations_test.rb" "test/cases/associations/has_one_through_associations_test.rb" "test/cases/associations/inner_join_association_test.rb" "test/cases/associations/inverse_associations_test.rb" "test/cases/associations/join_model_test.rb" "test/cases/associations_test.rb" "test/cases/attribute_methods_test.rb" "test/cases/autosave_association_test.rb" "test/cases/base_test.rb" "test/cases/batches_test.rb" "test/cases/binary_test.rb" "test/cases/calculations_test.rb" "test/cases/callbacks_observers_test.rb" "test/cases/callbacks_test.rb" "test/cases/column_alias_test.rb" "test/cases/column_definition_test.rb" "test/cases/connection_pool_test.rb" "test/cases/database_statements_test.rb" "test/cases/datatype_test_postgresql.rb" "test/cases/date_time_test.rb" "test/cases/defaults_test.rb" "test/cases/deprecated_finder_test.rb" "test/cases/dirty_test.rb" "test/cases/finder_respond_to_test.rb" "test/cases/finder_test.rb" "test/cases/fixtures_test.rb" "test/cases/i18n_test.rb" "test/cases/inheritance_test.rb" "test/cases/invalid_date_test.rb" "test/cases/json_serialization_test.rb" "test/cases/lifecycle_test.rb" "test/cases/locking_test.rb" "test/cases/log_subscriber_test.rb" "test/cases/method_scoping_test.rb" "test/cases/migration_test.rb" "test/cases/mixin_test.rb" "test/cases/modules_test.rb" "test/cases/multiple_db_test.rb" "test/cases/named_scope_test.rb" "test/cases/nested_attributes_test.rb" "test/cases/pk_test.rb" "test/cases/pooled_connections_test.rb" "test/cases/query_cache_test.rb" "test/cases/readonly_test.rb" "test/cases/reflection_test.rb" "test/cases/relations_test.rb" "test/cases/reload_models_test.rb" "test/cases/sanitize_test.rb" "test/cases/schema_authorization_test_postgresql.rb" "test/cases/schema_dumper_test.rb" "test/cases/schema_test_postgresql.rb" "test/cases/serialization_test.rb" "test/cases/timestamp_test.rb" "test/cases/transactions_test.rb" "test/cases/unconnected_test.rb" "test/cases/validations/association_validation_test.rb" "test/cases/validations/i18n_generate_message_validation_test.rb" "test/cases/validations/i18n_validation_test.rb" "test/cases/validations/uniqueness_validation_test.rb" "test/cases/validations_test.rb" "test/cases/xml_serialization_test.rb" "test/cases/yaml_serialization_test.rb" 
+2679 tests, 8088 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -w -I"lib:test:test/connections/native_postgresql" "/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader.rb" "test/cases/adapter_test.rb" "test/cases/adapters/postgresql/active_schema_test.rb" "test/cases/adapters/postgresql/datatype_test.rb" "test/cases/adapters/postgresql/postgresql_adapter_test.rb" "test/cases/adapters/postgresql/schema_authorization_test.rb" "test/cases/adapters/postgresql/schema_test.rb" "test/cases/aggregations_test.rb" "test/cases/ar_schema_test.rb" "test/cases/associations/belongs_to_associations_test.rb" "test/cases/associations/callbacks_test.rb" "test/cases/associations/cascaded_eager_loading_test.rb" "test/cases/associations/eager_load_includes_full_sti_class_test.rb" "test/cases/associations/eager_load_nested_include_test.rb" "test/cases/associations/eager_singularization_test.rb" "test/cases/associations/eager_test.rb" "test/cases/associations/extension_test.rb" "test/cases/associations/habtm_join_table_test.rb" "test/cases/associations/has_and_belongs_to_many_associations_test.rb" "test/cases/associations/has_many_associations_test.rb" "test/cases/associations/has_many_through_associations_test.rb" "test/cases/associations/has_one_associations_test.rb" "test/cases/associations/has_one_through_associations_test.rb" "test/cases/associations/identity_map_test.rb" "test/cases/associations/inner_join_association_test.rb" "test/cases/associations/inverse_associations_test.rb" "test/cases/associations/join_model_test.rb" "test/cases/associations_test.rb" "test/cases/attribute_methods/read_test.rb" "test/cases/attribute_methods_test.rb" "test/cases/autosave_association_test.rb" "test/cases/base_test.rb" "test/cases/batches_test.rb" "test/cases/binary_test.rb" "test/cases/bind_parameter_test.rb" "test/cases/calculations_test.rb" "test/cases/callbacks_test.rb" "test/cases/clone_test.rb" "test/cases/coders/yaml_column_test.rb" "test/cases/column_alias_test.rb" "test/cases/column_definition_test.rb" "test/cases/connection_management_test.rb" "test/cases/connection_pool_test.rb" "test/cases/counter_cache_test.rb" "test/cases/custom_locking_test.rb" "test/cases/database_statements_test.rb" "test/cases/date_time_test.rb" "test/cases/defaults_test.rb" "test/cases/deprecated_finder_test.rb" "test/cases/dirty_test.rb" "test/cases/dup_test.rb" "test/cases/dynamic_finder_match_test.rb" "test/cases/finder_respond_to_test.rb" "test/cases/finder_test.rb" "test/cases/fixtures_test.rb" "test/cases/habtm_destroy_order_test.rb" "test/cases/i18n_test.rb" "test/cases/identity_map_test.rb" "test/cases/inheritance_test.rb" "test/cases/invalid_date_test.rb" "test/cases/invertible_migration_test.rb" "test/cases/json_serialization_test.rb" "test/cases/lifecycle_test.rb" "test/cases/locking_test.rb" "test/cases/log_subscriber_test.rb" "test/cases/mass_assignment_security_test.rb" "test/cases/method_scoping_test.rb" "test/cases/migration/command_recorder_test.rb" "test/cases/migration_test.rb" "test/cases/mixin_test.rb" "test/cases/modules_test.rb" "test/cases/multiple_db_test.rb" "test/cases/named_scope_test.rb" "test/cases/nested_attributes_test.rb" "test/cases/persistence_test.rb" "test/cases/pooled_connections_test.rb" "test/cases/primary_keys_test.rb" "test/cases/query_cache_test.rb" "test/cases/quoting_test.rb" "test/cases/readonly_test.rb" "test/cases/reflection_test.rb" "test/cases/relation_scoping_test.rb" "test/cases/relation_test.rb" "test/cases/relations_test.rb" "test/cases/reload_models_test.rb" "test/cases/sanitize_test.rb" "test/cases/schema_dumper_test.rb" "test/cases/serialization_test.rb" "test/cases/session_store/session_test.rb" "test/cases/timestamp_test.rb" "test/cases/transaction_callbacks_test.rb" "test/cases/transactions_test.rb" "test/cases/unconnected_test.rb" "test/cases/validations/association_validation_test.rb" "test/cases/validations/i18n_generate_message_validation_test.rb" "test/cases/validations/i18n_validation_test.rb" "test/cases/validations/uniqueness_validation_test.rb" "test/cases/validations_test.rb" "test/cases/xml_serialization_test.rb" "test/cases/yaml_serialization_test.rb" 
 /home/vagrant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/1.8/pathname.rb:263: warning: `*' interpreted as argument prefix
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-0.9.21/lib/bundler.rb:70: warning: instance variable @setup not initialized
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-0.9.21/lib/bundler/runtime.rb:133: warning: method redefined; discarding old path
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/algebra/relations/utilities/compound.rb:36: warning: method redefined; discarding old engine
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/algebra/relations/operations/lock.rb:6: warning: method redefined; discarding old initialize
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/bundler/gems/arel-8151ac946644aab31601d7c0ed944eb9d7ea1e6b-master/lib/arel/engines/memory/relations/array.rb:9: warning: method redefined; discarding old initialize
+/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/bundler-1.0.10/lib/bundler.rb:203: warning: instance variable @checked_for_sudo not initialized
 Using native PostgreSQL
 Loaded suite /home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/rake-0.8.7/lib/rake/rake_test_loader
 Started
-......................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................./home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/i18n-0.3.6/lib/i18n/core_ext/string/interpolate.rb:95: warning: too many arguments for format string
-..................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................../home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/i18n-0.3.6/lib/i18n/core_ext/string/interpolate.rb:95: warning: too many arguments for format string
-/home/vagrant/.rvm/gems/ruby-1.8.7-p249/gems/i18n-0.3.6/lib/i18n/core_ext/string/interpolate.rb:95: warning: too many arguments for format string
-............................................................/test/cases/active_schema_test_postgresql.rb:12: warning: discarding old execute
-.............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
-Finished in 116.851919 seconds.
+.............................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................../home/vagrant/rails/activerecord/lib/active_record/attribute_methods/write.rb:13: warning: method redefined; discarding old name=
+/home/vagrant/rails/activerecord/lib/active_record/attribute_methods/read.rb:73: warning: discarding old name
+................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................../home/vagrant/rails/activerecord/test/migrations/interleaved/pass_3/3_interleaved_innocent_jointable.rb:2: warning: redefine up
+/home/vagrant/rails/activerecord/test/migrations/interleaved/pass_3/3_interleaved_innocent_jointable.rb:9: warning: redefine down
+/home/vagrant/rails/activerecord/test/migrations/interleaved/pass_3/1_interleaved_people_have_last_names.rb:2: warning: redefine up
+/home/vagrant/rails/activerecord/test/migrations/interleaved/pass_3/1_interleaved_people_have_last_names.rb:6: warning: redefine down
+..................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................................
+Finished in 179.142625 seconds.
 
-2227 tests, 7148 assertions, 0 failures, 0 errors
+2755 tests, 8393 assertions, 0 failures, 0 errors
 (in /home/vagrant/rails/railties)
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/application/configuration_test.rb
 Loaded suite test/application/configuration_test
 Started
-.....F...................
-Finished in 512.133706 seconds.
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+...FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+..FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+..FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+..FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.
+Finished in 90.710475 seconds.
 
-  1) Failure:
-test_config.action_controller.perform_caching_=_false(ApplicationTests::ConfigurationTest)
-    [test/application/configuration_test.rb:322:in `test_config.action_controller.perform_caching_=_false'
-     /home/vagrant/rails/activesupport/lib/active_support/testing/isolation.rb:60:in `run'
-     /home/vagrant/rails/activesupport/lib/active_support/testing/isolation.rb:98:in `run_in_isolation'
-     /home/vagrant/rails/activesupport/lib/active_support/testing/isolation.rb:95:in `fork'
-     /home/vagrant/rails/activesupport/lib/active_support/testing/isolation.rb:95:in `run_in_isolation'
-     /home/vagrant/rails/activesupport/lib/active_support/testing/isolation.rb:58:in `run']:
-<"902"> expected to be != to
-<"902">.
+27 tests, 31 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/application/console_test.rb
+Loaded suite test/application/console_test
+Started
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.
+Finished in 30.793526 seconds.
 
-25 tests, 29 assertions, 1 failures, 0 errors
+6 tests, 13 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/application/generators_test.rb
+Loaded suite test/application/generators_test
+Started
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+..FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.....
+Finished in 16.801021 seconds.
+
+8 tests, 15 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/application/initializers/boot_test.rb
+Loaded suite test/application/initializers/boot_test
+Started
+.
+Finished in 0.010514 seconds.
+
+1 tests, 0 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/application/initializers/check_ruby_version_test.rb
+Loaded suite test/application/initializers/check_ruby_version_test
+Started
+.
+Finished in 1.456863 seconds.
+
+1 tests, 1 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/application/initializers/frameworks_test.rb
+Loaded suite test/application/initializers/frameworks_test
+Started
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.
+Finished in 59.485718 seconds.
+
+12 tests, 16 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/application/initializers/hooks_test.rb
+Loaded suite test/application/initializers/hooks_test
+Started
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.
+Finished in 22.929594 seconds.
+
+6 tests, 7 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/application/initializers/i18n_test.rb
+Loaded suite test/application/initializers/i18n_test
+Started
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.
+Finished in 55.528105 seconds.
+
+13 tests, 18 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/application/initializers/load_path_test.rb
+Loaded suite test/application/initializers/load_path_test
+Started
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.
+Finished in 15.574583 seconds.
+
+5 tests, 9 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/application/initializers/notifications_test.rb
+Loaded suite test/application/initializers/notifications_test
+Started
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.
+Finished in 3.76038 seconds.
+
+1 tests, 2 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/application/loading_test.rb
+Loaded suite test/application/loading_test
+Started
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.	FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.
+Finished in 21.425496 seconds.
+
+5 tests, 8 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/application/middleware/best_practices_test.rb
+Loaded suite test/application/middleware/best_practices_test
+Started
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.
+Finished in 16.910101 seconds.
+
+2 tests, 2 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/application/middleware/cache_test.rb
+Loaded suite test/application/middleware/cache_test
+Started
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.
+Finished in 34.485975 seconds.
+
+7 tests, 27 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/application/middleware/remote_ip_test.rb
+Loaded suite test/application/middleware/remote_ip_test
+Started
+....
+Finished in 12.993223 seconds.
+
+4 tests, 4 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/application/middleware/sendfile_test.rb
+Loaded suite test/application/middleware/sendfile_test
+Started
+...
+Finished in 12.535298 seconds.
+
+3 tests, 3 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/application/middleware_test.rb
+Loaded suite test/application/middleware_test
+Started
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+..FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.
+Finished in 68.839795 seconds.
+
+16 tests, 32 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/application/paths_test.rb
+Loaded suite test/application/paths_test
+Started
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.
+Finished in 13.091916 seconds.
+
+4 tests, 28 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/application/rackup_test.rb
+Loaded suite test/application/rackup_test
+Started
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+..FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.
+Finished in 12.927338 seconds.
+
+4 tests, 6 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/application/rake_test.rb
+Loaded suite test/application/rake_test
+Started
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.
+Finished in 63.233732 seconds.
+
+7 tests, 16 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/application/routing_test.rb
+Loaded suite test/application/routing_test
+Started
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.
+Finished in 65.893492 seconds.
+
+13 tests, 19 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/application/runner_test.rb
+Loaded suite test/application/runner_test
+Started
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.
+Finished in 26.444957 seconds.
+
+5 tests, 5 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/application/test_test.rb
+Loaded suite test/application/test_test
+Started
+FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.
+Finished in 17.44608 seconds.
+
+3 tests, 3 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/application/url_generation_test.rb
+Loaded suite test/application/url_generation_test
+Started
+.
+Finished in 2.724982 seconds.
+
+1 tests, 1 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/backtrace_cleaner_test.rb
+Loaded suite test/backtrace_cleaner_test
+Started
+....
+Finished in 0.004647 seconds.
+
+4 tests, 4 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/generators/actions_test.rb
+Loaded suite test/generators/actions_test
+Started
+.............................
+Finished in 4.512085 seconds.
+
+29 tests, 48 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/generators/app_generator_test.rb
+Loaded suite test/generators/app_generator_test
+Started
+.....Invalid application name test. Please give a name which does not match one of the reserved rails words.
+....................................
+Finished in 16.829583 seconds.
+
+41 tests, 331 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/generators/controller_generator_test.rb
+Loaded suite test/generators/controller_generator_test
+Started
+............
+Finished in 5.073547 seconds.
+
+12 tests, 22 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/generators/generated_attribute_test.rb
+Loaded suite test/generators/generated_attribute_test
+Started
+......................
+Finished in 0.101794 seconds.
+
+22 tests, 36 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/generators/generator_generator_test.rb
+Loaded suite test/generators/generator_generator_test
+Started
+....
+Finished in 0.111891 seconds.
+
+4 tests, 20 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/generators/helper_generator_test.rb
+Loaded suite test/generators/helper_generator_test
+Started
+......
+Finished in 0.252608 seconds.
+
+6 tests, 8 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/generators/integration_test_generator_test.rb
+Loaded suite test/generators/integration_test_generator_test
+Started
+.
+Finished in 0.039841 seconds.
+
+1 tests, 2 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/generators/mailer_generator_test.rb
+Loaded suite test/generators/mailer_generator_test
+Started
+.........
+Finished in 0.539977 seconds.
+
+9 tests, 30 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/generators/migration_generator_test.rb
+Loaded suite test/generators/migration_generator_test
+Started
+......
+Finished in 0.821596 seconds.
+
+6 tests, 26 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/generators/model_generator_test.rb
+Loaded suite test/generators/model_generator_test
+Started
+.................................
+Finished in 2.793492 seconds.
+
+33 tests, 107 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/generators/named_base_test.rb
+Loaded suite test/generators/named_base_test
+Started
+..........
+Finished in 0.055697 seconds.
+
+10 tests, 48 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/generators/namespaced_generators_test.rb
+Loaded suite test/generators/namespaced_generators_test
+Started
+............................
+Finished in 4.092536 seconds.
+
+28 tests, 174 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/generators/observer_generator_test.rb
+Loaded suite test/generators/observer_generator_test
+Started
+....
+Finished in 0.253984 seconds.
+
+4 tests, 7 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/generators/performance_test_generator_test.rb
+Loaded suite test/generators/performance_test_generator_test
+Started
+.
+Finished in 0.02997 seconds.
+
+1 tests, 2 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/generators/plugin_generator_test.rb
+Loaded suite test/generators/plugin_generator_test
+Started
+........
+Finished in 0.845094 seconds.
+
+8 tests, 24 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/generators/plugin_new_generator_test.rb
+Loaded suite test/generators/plugin_new_generator_test
+Started
+....................FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.FSSM: An optimized backend is available for this platform!
+    gem install rb-inotify
+.......................
+Finished in 37.150581 seconds.
+
+44 tests, 201 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/generators/resource_generator_test.rb
+Loaded suite test/generators/resource_generator_test
+Started
+..........
+Finished in 2.261707 seconds.
+
+10 tests, 38 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/generators/scaffold_controller_generator_test.rb
+Loaded suite test/generators/scaffold_controller_generator_test
+Started
+........
+Finished in 3.003903 seconds.
+
+8 tests, 45 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/generators/scaffold_generator_test.rb
+Loaded suite test/generators/scaffold_generator_test
+Started
+......
+Finished in 3.616363 seconds.
+
+6 tests, 125 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/generators/session_migration_generator_test.rb
+Loaded suite test/generators/session_migration_generator_test
+Started
+...
+Finished in 1.074906 seconds.
+
+3 tests, 10 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/generators/stylesheets_generator_test.rb
+Loaded suite test/generators/stylesheets_generator_test
+Started
+..
+Finished in 0.031 seconds.
+
+2 tests, 2 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/generators_test.rb
+Loaded suite test/generators_test
+Started
+..............................
+Finished in 2.098489 seconds.
+
+30 tests, 51 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/initializable_test.rb
+Loaded suite test/initializable_test
+Started
+..........
+Finished in 0.176943 seconds.
+
+10 tests, 10 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/paths_test.rb
+Loaded suite test/paths_test
+Started
+.........................................
+Finished in 0.112558 seconds.
+
+41 tests, 66 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/rails_info_controller_test.rb
+Loaded suite test/rails_info_controller_test
+Started
+.....
+Finished in 1.119732 seconds.
+
+5 tests, 5 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/rails_info_test.rb
+Loaded suite test/rails_info_test
+Started
+......
+Finished in 1.147681 seconds.
+
+6 tests, 13 assertions, 0 failures, 0 errors
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/bin/ruby -Itest -I/home/vagrant/rails/railties/../activesupport/lib test/railties/engine_test.rb
+/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `gem_original_require': no such file to load -- rack/test (LoadError)
+	from /home/vagrant/.rvm/rubies/ruby-1.8.7-p249/lib/ruby/site_ruby/1.8/rubygems/custom_require.rb:29:in `require'
+	from test/railties/engine_test.rb:4
 rake aborted!
-Failures
-/home/vagrant/rails/railties/Rakefile:22
+Command failed with status (1): [/home/vagrant/.rvm/rubies/ruby-1.8.7-p249/...]
+/home/vagrant/rails/railties/Rakefile:21
 (See full trace by running task with --trace)
 rake aborted!
-Errors in actionpack, actionmailer, railties
-/home/vagrant/rails/Rakefile:17
+Errors in railties
+/home/vagrant/rails/Rakefile:27
 (See full trace by running task with --trace)
-vagrant@vagrantbase:~/rails$ 
+
+real	27m33.882s
+user	11m12.790s
+sys	6m31.290s
