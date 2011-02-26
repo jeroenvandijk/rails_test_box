@@ -8,8 +8,6 @@ require_recipe "rails_test_databases"
 
 require_recipe "rvm"
 
-# require_recipe "rails_test_gems"
-
 node[:rubies].each do |version|
   rvm_install version
   setup_rails_gems

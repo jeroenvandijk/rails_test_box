@@ -3,14 +3,22 @@
 #      a command that run against all rubies versions like RVM does.
 define :setup_rails_gems do
   Chef::Log.info "Setting up gems for Rails"
-  
-  # Update rubygems, for bundler
-  execute "gem update --system"
-
-  gem_package "bundler"
-  gem_package "rake"
 
   home = "/home/vagrant"
+
+  %w(bundler rake rb-inotify).each do |gem_name|
+    execute "Run bundle install for rails" do
+      command "gem install #{gem_name}"
+      user "vagrant"
+      cwd home
+    end
+  end
+
+  # We need the following for the pg gem
+  package "libpq-dev"
+
+  # FIXME Need to correct the permissions on the .gem dir
+  execute "chown -R vagrant:vagrant #{home}/.gem"
 
   execute "Run bundle install for rails" do
     command "bundle install"
